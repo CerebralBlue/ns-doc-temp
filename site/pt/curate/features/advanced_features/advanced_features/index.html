@@ -1,0 +1,3369 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://documentation.neuralseek.com/pt/curate/features/advanced_features/advanced_features/">
+      
+      
+        <link rel="prev" href="../../conversational_capabilities/conversational_capabilities/">
+      
+      
+        <link rel="next" href="../../../guides/training_virtual_agents/training_virtual_agents/">
+      
+      
+      <link rel="icon" href="../../../../../assets/ns-white.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
+    
+    
+      
+        <title>Funcionalidades Avançadas - NeuralSeek Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-LE5XX6X6Z7"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-LE5XX6X6Z7",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-LE5XX6X6Z7",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#deteccao_de_pii" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../../../" title="NeuralSeek Documentation" class="md-header__button md-logo" aria-label="NeuralSeek Documentation" data-md-component="logo">
+      
+  <img src="../../../../../assets/ns-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NeuralSeek Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Funcionalidades Avançadas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Selecione o idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../../curate/features/advanced_features/advanced_features/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../../es/curate/features/advanced_features/advanced_features/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="pt" class="md-select__link">
+              Português
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../" title="NeuralSeek Documentation" class="md-nav__button md-logo" aria-label="NeuralSeek Documentation" data-md-component="logo">
+      
+  <img src="../../../../../assets/ns-white.svg" alt="logo">
+
+    </a>
+    NeuralSeek Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../getting_started/getting_started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introdução
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NeuralSeek
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Início
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../home/overview/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Configuração
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Configuração
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../configure/overview/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../configure/configuration_details/configuration_details/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Detalhes da configuração
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Funcionalidades
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Funcionalidades
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../configure/features/data_management/data_management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gerenciamento de Dados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../configure/features/language_capabilities/language_capabilities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Capacidades Linguísticas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guias
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Guias
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../configure/guides/multimodal/multimodal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuração Multimodal LLM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../configure/guides/proposals/proposals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Uso de Propostas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../configure/guides/semantic_model/semantic_model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ajuste do Modelo Semântico
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../configure/guides/tuning_guide/tuning_guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ajuste da Base de Conhecimento
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Integração
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Integração
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../integrate/overview/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Integrar NeuralSeek
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Integrar NeuralSeek
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../integrate/integrate_neuralseek/rest_api/rest_api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    REST API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Integrações
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Integrações
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../integrate/integrations/supported_knowledgebases/supported_knowledgebases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bases de Conhecimento Suportadas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../integrate/integrations/supported_llms/supported_llms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLMs Suportados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../integrate/integrations/supported_virtual_agents/supported_virtual_agents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Agentes Virtuais Suportados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guias
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Guias
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../integrate/guides/backup_and_restore/backup_and_restore/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backup e Restauração
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../integrate/guides/elasticsearch_vector_model/elasticsearch_vector_model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuração do ElasticSearch para Busca Vetorial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../integrate/guides/implementing_feedback/implementing_feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implementação de Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../integrate/guides/pinecone_configuration/pinecone_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integração do Pinecone com NeuralSeek
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../integrate/guides/providing_context/providing_context/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Uso do Contexto Conversacional
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Extração
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Extração
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../extract/overview/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Carregar
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Carregar
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../load/overview/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    mAIstro
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            mAIstro
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/overview/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Funcionalidades
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Funcionalidades
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/visual_editor/visual_editor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editor Visual
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_overview/ntl_overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral do NTL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_3" id="__nav_8_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Funções do NTL
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Funções do NTL
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_functions/get_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obter Dados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_functions/upload_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enviar Dados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_functions/generate_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gerar Dados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_3_4" id="__nav_8_2_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Modificar Dados
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_2_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Modificar Dados
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_functions/modify_data/code_tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Caixa de Ferramentas de Código
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_functions/modify_data/json_tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Caixa de Ferramentas JSON
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_functions/modify_data/string_tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Caixa de Ferramentas de Strings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_functions/modify_data/xml_tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Caixa de Ferramentas XML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_functions/modify_data/transform/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_functions/extract_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extrair Dados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_functions/database_connections/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conexões com Banco de Dados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_functions/control_flow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fluxo de Controle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_functions/guardrails/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guardrails (Salvaguardas)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_functions/system_variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variáveis do Sistema
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_functions/send_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enviar Dados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/features/ntl_functions/rag_tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ferramentas RAG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guias
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            Guias
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/guides/virtual_kb/virtual_kb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conhecimento Virtual
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../maistro/guides/dynamic_filters/dynamic_filters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filtros Dinâmicos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Buscar
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Buscar
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../seek/overview/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chat
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Chat
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../chat/overview/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_2" id="__nav_10_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guias
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_2">
+            <span class="md-nav__icon md-icon"></span>
+            Guias
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../chat/guides/chat_sdk_integration/chat_sdk_integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integração com SDK de Chat
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Curadoria
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Curadoria
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_11_2" id="__nav_11_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Funcionalidades
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_11_2">
+            <span class="md-nav__icon md-icon"></span>
+            Funcionalidades
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conversational_capabilities/conversational_capabilities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Capacidades Conversacionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Funcionalidades Avançadas
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Funcionalidades Avançadas
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deteccao_de_pii" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detecção de PII
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detecção de PII">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definindo_um_pii_especifico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definindo um PII específico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ignorando_certos_pii" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ignorando certos PII
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registro_de_ida_e_volta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registro de Ida e Volta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analise_semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análise Semântica
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Análise Semântica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurando_a_analise_semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurando a Análise Semântica
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usando_a_analise_semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usando a Análise Semântica
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definindo_a_penalidade_de_data_ou_intervalo_de_pontuacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definindo a Penalidade de Data ou Intervalo de Pontuação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplos_de_analise_semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplos de Análise Semântica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analise_de_sentimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análise de Sentimento
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#replay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replay
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entendimento_de_tabelas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entendimento de Tabelas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelos_de_linguagem_multimodais_no_maistro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelos de Linguagem Multimodais no mAIstro
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_3" id="__nav_11_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guias
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            Guias
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/training_virtual_agents/training_virtual_agents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Treinamento de Agentes Virtuais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Governança
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Governança
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../governance/overview/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_2" id="__nav_12_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Funcionalidades
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_2">
+            <span class="md-nav__icon md-icon"></span>
+            Funcionalidades
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../governance/features/governance_metrics/governance_metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Métricas de Governança
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Registro de Alterações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../data_security_and_privacy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Segurança e Privacidade de Dados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../plans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Planos Disponíveis no NeuralSeek
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sobre o Cerebral Blue
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            Sobre o Cerebral Blue
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://cerebralblue.com/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Página Inicial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://cerebralblue.com/about-us/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sobre Nós
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://cerebralblue.com/contact-us/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contate-Nos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://cerebralblue.com/contact-us/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parceiros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deteccao_de_pii" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detecção de PII
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detecção de PII">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definindo_um_pii_especifico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definindo um PII específico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ignorando_certos_pii" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ignorando certos PII
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registro_de_ida_e_volta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registro de Ida e Volta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analise_semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análise Semântica
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Análise Semântica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurando_a_analise_semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurando a Análise Semântica
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usando_a_analise_semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usando a Análise Semântica
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definindo_a_penalidade_de_data_ou_intervalo_de_pontuacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definindo a Penalidade de Data ou Intervalo de Pontuação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplos_de_analise_semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplos de Análise Semântica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analise_de_sentimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análise de Sentimento
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#replay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replay
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entendimento_de_tabelas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entendimento de Tabelas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelos_de_linguagem_multimodais_no_maistro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelos de Linguagem Multimodais no mAIstro
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Funcionalidades Avançadas</h1>
+
+<h2 id="deteccao_de_pii">Detecção de PII<a class="headerlink" href="#deteccao_de_pii" title="Permanent link"></a></h2>
+<p><strong>O que é?</strong></p>
+<ul>
+<li>O NeuralSeek possui um recurso avançado de detecção de Informações de Identificação Pessoal (PII) que identifica automaticamente qualquer PII em entradas de usuários. Ele permite que os usuários sinalizem, mascarem, escondam ou excluam o PII detectado.</li>
+</ul>
+<p><strong>Por que é importante?</strong></p>
+<ul>
+<li>Os usuários podem manter um ambiente seguro, fornecendo respostas precisas às consultas dos usuários, garantindo o cumprimento das regulamentações de privacidade de dados e protegendo informações confidenciais.</li>
+</ul>
+<p><strong>Como funciona?</strong></p>
+<ul>
+<li>A detecção comum e bem conhecida de PII está ativada por padrão no NeuralSeek. Quando você insere uma informação de PII, por exemplo, quando você insere um número de cartão de crédito no Seek:</li>
+</ul>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/credit-card.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="entering PII" src="../../../../../curate/features/advanced_features/images/credit-card.png" /></a></p>
+<p>No NeuralSeek, a pergunta acima será registrada e marcada como contendo informações de PII e avisa o usuário sobre um risco potencial.</p>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/pii_image_002.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="detecting PII" src="../../../../../curate/features/advanced_features/images/pii_image_002.png" /></a></p>
+<p>O número do cartão de crédito também é mascarado e removido, para que os dados sejam protegidos de serem visualizados. As respostas a essas perguntas também indicam que foram geradas a partir de uma pergunta com PII, para que você possa identificá-las facilmente.</p>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/pii_image_003.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="masking PII" src="../../../../../curate/features/advanced_features/images/pii_image_003.png" /></a></p>
+<h3 id="definindo_um_pii_especifico">Definindo um PII específico<a class="headerlink" href="#definindo_um_pii_especifico" title="Permanent link"></a></h3>
+<p>No entanto, isso é o que o NeuralSeek faz contra padrões comuns de PII, e pode haver um PII específico que você gostaria de ocultar para suas necessidades de negócios específicas. Se você quiser ajudar o NeuralSeek a detectar e processar melhor o PII para isso, você pode configurá-lo em <code>Configurar &gt; Tratamento de Informações de Identificação Pessoal (PII)</code> no menu superior:</p>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/pii_image_004.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="defining pii" src="../../../../../curate/features/advanced_features/images/pii_image_004.png" /></a></p>
+<p>Como funciona é com base em uma frase de exemplo, e não precisa ser um padrão ou regras exatas. Por exemplo, definindo a frase de exemplo como:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Meu nome é Howard Yoo e meu tipo sanguíneo é O, e eu moro em Chicago.
+</span></code></pre></div>
+<p>Para cada elemento de PII nessa frase, você pode definir os elementos de PII nessa frase delimitados por vírgula, assim:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Howard Yoo, 0
+</span></code></pre></div>
+<p>Então, da próxima vez, quando alguém inserir um PII correspondente ao exemplo, assim:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Meu tipo sanguíneo é A
+</span></code></pre></div>
+<p>O NeuralSeek agora detecta isso e mascara o tipo sanguíneo que o usuário forneceu para que não seja exposto:</p>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/pii_image_005.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="masking PII result" src="../../../../../curate/features/advanced_features/images/pii_image_005.png" /></a></p>
+<h3 id="ignorando_certos_pii">Ignorando certos PII<a class="headerlink" href="#ignorando_certos_pii" title="Permanent link"></a></h3>
+<p>Você também pode fazer com que o NeuralSeek ignore certos PII, inserindo "Sem PII" no elemento. Por exemplo, definindo o elemento como "Sem PII" com uma frase de exemplo dada, o NeuralSeek não filtrará a pergunta, mesmo que ela contenha um elemento de PII:</p>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/pii_image_006.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ignoring pii" src="../../../../../curate/features/advanced_features/images/pii_image_006.png" /></a></p>
+<p>Portanto, quando perguntado sobre uma pergunta semelhante, observe como o nome do cachorro agora é visível como não sendo uma informação de PII:</p>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/pii_image_007.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ignoring pii result" src="../../../../../curate/features/advanced_features/images/pii_image_007.png" /></a></p>
+<p>A razão básica para usar isso é que, às vezes, o NeuralSeek confundiria certas perguntas como contendo PII, mesmo que a frase claramente não contenha nenhum dado desse tipo. Nesse caso, definir o que não deve ser considerado como PII seria muito útil.</p>
+<h2 id="registro_de_ida_e_volta">Registro de Ida e Volta<a class="headerlink" href="#registro_de_ida_e_volta" title="Permanent link"></a></h2>
+<p><strong>O que é?</strong></p>
+<ul>
+<li>O registro de ida e volta é um processo que envolve o registro e armazenamento de todas as interações entre um usuário e um Agente Virtual. O NeuralSeek suporta o recebimento de logs de Agentes Virtuais para monitorar respostas selecionadas. Isso inclui a pergunta do usuário, a resposta do Agente Virtual e quaisquer perguntas ou esclarecimentos adicionais.</li>
+</ul>
+<p><strong>Por que é importante?</strong></p>
+<ul>
+<li>O objetivo do registro de ida e volta é melhorar o desempenho do Agente Virtual, alertando sobre o conteúdo no Agente Virtual que provavelmente está desatualizado, porque a documentação de origem mudou.</li>
+</ul>
+<p><strong>Como funciona?</strong></p>
+<ul>
+<li>O Agente Virtual de Origem está conectado ao NeuralSeek por meio das instruções específicas por plataforma na guia Integrar.
+Uma vez conectado, o NeuralSeek monitorará os intents que estão sendo usados ao vivo no Agente Virtual. Uma vez por dia, o NeuralSeek pesquisará a KnowledgeBase conectada e recalculará o hash para os dados retornados. Esse hash será comparado ao hash das respostas armazenadas e, se nenhuma correspondência for encontrada, um alerta será gerado notificando que a documentação de origem mudou em comparação com a última geração de resposta concluída pelo endpoint de busca.</li>
+</ul>
+<h2 id="analise_semantica">Análise Semântica<a class="headerlink" href="#analise_semantica" title="Permanent link"></a></h2>
+<p><strong>O que é?</strong></p>
+<ul>
+<li>O NeuralSeek gera respostas utilizando diretamente o conteúdo de fontes corporativas. Para garantir a transparência entre as fontes e as respostas, o NeuralSeek revela a origem específica das palavras e frases geradas. A clareza é ainda mais alcançada empregando pontuações de correspondência semântica. Essas pontuações comparam a resposta gerada com a documentação de referência, fornecendo uma compreensão clara do alinhamento entre a resposta e o significado transmitido nos documentos de origem. Isso garante a precisão e instila confiança na confiabilidade das respostas geradas pelo NeuralSeek.</li>
+</ul>
+<p><strong>Por que é importante?</strong></p>
+<ul>
+<li>Ao poder analisar como a resposta gerada seria originada dos fatos reais fornecidos pela KnowledgeBase, os usuários podem analisar de quais fontes as respostas realmente se originaram e quanto das respostas vem diretamente do conhecimento versus quanto delas é da resposta gerada pelo LLM. Isso garante a precisão e instila confiança na confiabilidade das respostas geradas pelo NeuralSeek.</li>
+</ul>
+<p>Por exemplo, o Seek do NeuralSeek fornecerá uma análise semântica rica em termos de quão bem a resposta abrange os fatos encontrados na KnowledgeBase (ou respostas geradas em cache) por meio da codificação por cores da área dela na resposta, vinculando-a visualmente às fontes e fornecendo o resultado da análise semântica para explicar as principais razões por trás da pontuação de correspondência semântica fornecida.</p>
+<p><strong>Como funciona?</strong></p>
+<ul>
+<li>Quando o NeuralSeek recebe uma pergunta, ele primeiro tentará corresponder a intents e respostas existentes, também tentará pesquisar a KnowledgeBase corporativa subjacente e retornar quaisquer passagens relevantes de várias fontes. O NeuralSeek então usará essas respostas diretamente como estão, ou usará partes das informações para formar uma resposta usando a capacidade de IA generativa dos LLMs.</li>
+</ul>
+<h3 id="configurando_a_analise_semantica">Configurando a Análise Semântica<a class="headerlink" href="#configurando_a_analise_semantica" title="Permanent link"></a></h3>
+<p>A opção de configuração para a análise semântica é encontrada em "Configurar &gt; Confiança e Limites de Aviso". O modelo de pontuação semântica está habilitado por padrão, mas você também pode desativá-lo. Você também pode habilitar se a análise semântica deve ser usada para confiança e para reordenar os resultados da pesquisa da base de conhecimento de acordo com o quanto eles correspondem semanticamente. Também há seções para controlar como a análise pode aplicar penalidades por termos-chave ausentes, termos de pesquisa ou quão frequente as fontes são alternadas (fragmentadas na resposta gerada).</p>
+<blockquote>
+<p>❓ Como a reordenação dos resultados da pesquisa usando a análise semântica pode ser útil? Ter a opção de reordenar os resultados da pesquisa da KnowledgeBase pode garantir que a lista de resultados da pesquisa apareça na ordem que corresponde melhor à resposta fornecida. Isso porque, às vezes, os resultados da pesquisa retornados da KnowledgeBase não se alinham perfeitamente com a resposta, e, portanto, o URL do documento resultante pode ser enganoso.</p>
+</blockquote>
+<h3 id="usando_a_analise_semantica">Usando a Análise Semântica<a class="headerlink" href="#usando_a_analise_semantica" title="Permanent link"></a></h3>
+<p>Na guia 'Seek' do NeuralSeek, você pode fornecer uma pergunta e receber uma resposta do NeuralSeek.
+Ao ativar a 'Proveniência', isso lhe dará a parte codificada por cores da resposta que foi diretamente originada desses resultados.</p>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/answer_provenance_updated2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="turning on provenance" src="../../../../../curate/features/advanced_features/images/answer_provenance_updated2.png" /></a> <!--{: style=width:25% }--></p>
+<p>Abaixo da resposta, você verá algumas das principais informações relacionadas à resposta, como <code>Pontuação de correspondência semântica (em %)</code>, <code>Análise semântica</code>, bem como resultados provenientes do Banco de Conhecimento em termos de <code>Confiança do KB</code>, <code>Cobertura do KB</code>, <code>Tempo de resposta do KB</code> e <code>Resultados do KB</code>.</p>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/image_005.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="scores" src="../../../../../curate/features/advanced_features/images/image_005.png" /></a></p>
+<p>A porcentagem de correspondência semântica é a pontuação geral de correspondência que indica o quanto o NeuralSeek acredita que as respostas estão bem alinhadas com a verdade subjacente (do Banco de Conhecimento). Quanto maior o percentual, mais precisa e relevante é a resposta com base na verdade.</p>
+<p>A Análise Semântica explica por que o NeuralSeek calculou a pontuação de correspondência de uma maneira fácil de entender para os usuários. Lendo este resumo, os usuários têm uma boa compreensão do motivo pelo qual a resposta recebeu uma pontuação alta ou baixa.</p>
+<p>Confiança, cobertura, tempo de resposta e resultados do Banco de Conhecimento são todos provenientes do próprio Banco de Conhecimento. Essas porcentagens indicam o nível de confiança e cobertura, indicando até que ponto o Banco de Conhecimento acredita que as fontes recuperadas são relevantes para a pergunta fornecida.</p>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/image_006.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="kb results" src="../../../../../curate/features/advanced_features/images/image_006.png" /></a></p>
+<p>Os contextos do Banco de Conhecimento são os 'trechos' de fontes do Banco de Conhecimento, com base na relevância do que foi encontrado em seus dados. Clicar em um deles revelaria a passagem encontrada, e o código de cores correspondente ao da resposta gerada seria usado para destacar as partes que foram utilizadas.</p>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/image_007.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="contexts" src="../../../../../curate/features/advanced_features/images/image_007.png" /></a></p>
+<p>Por fim, o <code>discurso padrão</code> definido na configuração do NeuralSeek é mostrado e codificado por cores com base em quanto dele foi usado na resposta.</p>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/image_008.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="stump speech" src="../../../../../curate/features/advanced_features/images/image_008.png" /></a></p>
+<p>Se você está se perguntando onde o Discurso Padrão é armazenado, você pode encontrá-lo em <code>Configurar &gt; Preferências da Empresa / Organização</code> seção:</p>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/organization-prefs.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="org preference" src="../../../../../curate/features/advanced_features/images/organization-prefs.png" /></a></p>
+<h3 id="definindo_a_penalidade_de_data_ou_intervalo_de_pontuacao">Definindo a Penalidade de Data ou Intervalo de Pontuação<a class="headerlink" href="#definindo_a_penalidade_de_data_ou_intervalo_de_pontuacao" title="Permanent link"></a></h3>
+<p>O resultado do Banco de Conhecimento resultante é afetado pela configuração que você definiu para o Banco de Conhecimento corporativo que você está usando com o NeuralSeek. Você pode encontrar essas configurações na seção <code>Configurar &gt; Detalhes do Banco de Conhecimento Corporativo</code>:</p>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/image_010.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="org preference" src="../../../../../curate/features/advanced_features/images/image_010.png" /></a></p>
+<ul>
+<li>O intervalo de pontuação do documento dita o intervalo de possíveis 'pontuações de relevância' que ele retornará como resultado. Por exemplo, se o intervalo de pontuação for de 80%, os resultados terão uma pontuação de relevância maior que 20% e igual ou menor que 100%. Se o intervalo de pontuação for de 20%, o intervalo de pontuação de relevância seria então qualquer coisa entre 80% ~ 100%, respectivamente.</li>
+<li>A Penalidade de Data do Documento, se especificada acima de 0%, começará a impor pontuações de penalidade para reduzir a relevância com base em quão antiga é a informação proveniente. O Banco de Conhecimento tentará encontrar qualquer informação relacionada ao tempo no documento e reduziria a pontuação com base em quão antiga é a informação, em relação ao tempo atual.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/image_011.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="kb score and date penalty settings" src="../../../../../curate/features/advanced_features/images/image_011.png" /></a></p>
+<p>Quando os resultados dizem "4 filtrados por penalidade de data ou intervalo de pontuação", significa que essas configurações entraram em jogo ao recuperar informações relevantes do Banco de Conhecimento.</p>
+<h3 id="exemplos_de_analise_semantica">Exemplos de Análise Semântica<a class="headerlink" href="#exemplos_de_analise_semantica" title="Permanent link"></a></h3>
+<p><strong>Exemplo de alta pontuação</strong>
+<a class="glightbox" href="../../../../../curate/features/advanced_features/images/high-example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="example high score" src="../../../../../curate/features/advanced_features/images/high-example.png" /></a></p>
+<p><strong>Exemplo de pontuação média</strong>
+<a class="glightbox" href="../../../../../curate/features/advanced_features/images/medium-example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="example med score" src="../../../../../curate/features/advanced_features/images/medium-example.png" /></a></p>
+<p><strong>Exemplo de baixa pontuação</strong>
+<a class="glightbox" href="../../../../../curate/features/advanced_features/images/low-example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="example low score" src="../../../../../curate/features/advanced_features/images/low-example.png" /></a></p>
+<h2 id="analise_de_sentimento">Análise de Sentimento<a class="headerlink" href="#analise_de_sentimento" title="Permanent link"></a></h2>
+<p><strong>O que é?</strong>
+- A análise de sentimento do NeuralSeek é um recurso que permite aos usuários analisar o sentimento ou tom emocional de um texto. Ele pode determinar se o sentimento expresso no texto é positivo, negativo ou neutro. A análise de sentimento do NeuralSeek é baseada em técnicas avançadas de processamento de linguagem natural e pode fornecer insights valiosos para empresas e organizações.</p>
+<p><strong>Por que é importante?</strong></p>
+<ul>
+<li>Ao ser capaz de detectar se um usuário é negativo ou positivo sobre certas questões, você pode fazer com que o agente virtual use essas informações para fornecer serviços mais personalizados. Por exemplo, para um usuário que expressa sentimento negativo, os agentes virtuais podem encaminhar a sessão para agentes humanos ou atribuir maior prioridade, para que mais atenção possa ser fornecida.</li>
+</ul>
+<p><strong>Como funciona?</strong></p>
+<ul>
+<li>O NeuralSeek executará a análise de sentimento no texto de entrada do usuário. O sentimento é retornado como um número inteiro entre zero (0) e nove (9), sendo zero (0) o mais negativo, nove (9) o mais positivo e cinco (5) neutro.</li>
+</ul>
+<details class="exemplo de detecção de sentimento">
+<summary>Exemplo</summary>
+<p>Ao usar a API REST, por exemplo, fornecer comentários negativos poderia desencadear uma pontuação de análise de sentimento baixa.</p>
+<div class="language-JSON highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="err">ques</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="p">:</span><span class="w"> </span><span class="err">Eu</span><span class="w"> </span><span class="kc">n</span><span class="err">ão</span><span class="w"> </span><span class="err">gos</span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="err">do</span><span class="w"> </span><span class="err">NeuralSeek</span><span class="p">,</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="err">co</span><span class="kc">nte</span><span class="err">x</span><span class="kc">t</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="err">user_sessio</span><span class="kc">n</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="err">me</span><span class="kc">ta</span><span class="err">da</span><span class="kc">ta</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">      </span><span class="err">user_id</span><span class="p">:</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="err">sys</span><span class="kc">te</span><span class="err">m</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">      </span><span class="err">sessio</span><span class="kc">n</span><span class="err">_id</span><span class="p">:</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">  </span><span class="p">},</span>
+</span></code></pre></div>
+<p>Isso resultaria em uma resposta com baixa pontuação de sentimento:</p>
+<div class="language-JSON highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="err">a</span><span class="kc">ns</span><span class="err">wer</span><span class="p">:</span><span class="w"> </span><span class="err">Si</span><span class="kc">nt</span><span class="err">o</span><span class="w"> </span><span class="err">mui</span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="err">por</span><span class="w"> </span><span class="err">você</span><span class="w"> </span><span class="kc">n</span><span class="err">ão</span><span class="w"> </span><span class="err">gos</span><span class="kc">tar</span><span class="w"> </span><span class="err">do</span><span class="w"> </span><span class="err">NeuralSeek.</span><span class="w"> </span><span class="err">Se</span><span class="w"> </span><span class="err">você</span><span class="w"> </span><span class="kc">t</span><span class="err">iver</span><span class="w"> </span><span class="err">alguma</span><span class="w"> </span><span class="err">preocupação</span><span class="w"> </span><span class="err">ou</span><span class="w"> </span><span class="kc">fee</span><span class="err">dback</span><span class="w"> </span><span class="err">especí</span><span class="kc">f</span><span class="err">ico</span><span class="p">,</span><span class="w"> </span><span class="err">por</span><span class="w"> </span><span class="kc">fa</span><span class="err">vor</span><span class="w"> </span><span class="err">me</span><span class="w"> </span><span class="err">i</span><span class="kc">nf</span><span class="err">orme</span><span class="w"> </span><span class="err">e</span><span class="w"> </span><span class="kc">fare</span><span class="err">i</span><span class="w"> </span><span class="err">o</span><span class="w"> </span><span class="err">meu</span><span class="w"> </span><span class="err">melhor</span><span class="w"> </span><span class="err">para</span><span class="w"> </span><span class="err">ajudá</span><span class="mi">-</span><span class="err">lo.</span><span class="p">,</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="err">cachedResul</span><span class="kc">t</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="err">la</span><span class="kc">n</span><span class="err">gCode</span><span class="p">:</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="err">se</span><span class="kc">nt</span><span class="err">ime</span><span class="kc">nt</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="kc">t</span><span class="err">o</span><span class="kc">tal</span><span class="err">Cou</span><span class="kc">nt</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="err">KBscore</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="err">score</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span><span class="err">url</span><span class="p">:</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//neuralseek.com/faq,</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="err">docume</span><span class="kc">nt</span><span class="p">:</span><span class="w"> </span><span class="err">FAQ</span><span class="w"> </span><span class="mi">-</span><span class="w"> </span><span class="err">NeuralSeek</span><span class="p">,</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">  </span><span class="err">kbTime</span><span class="p">:</span><span class="w"> </span><span class="mi">454</span><span class="p">,</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">  </span><span class="err">kbCoverage</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">  </span><span class="kc">t</span><span class="err">ime</span><span class="p">:</span><span class="w"> </span><span class="mi">2688</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Observe a pontuação de sentimento de 3, que está na faixa baixa de 0 a 10. Por outro lado, se você expressar um sentimento positivo, como:</p>
+<div class="language-JSON highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="err">ques</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="p">:</span><span class="w"> </span><span class="err">Eu</span><span class="w"> </span><span class="err">realme</span><span class="kc">nte</span><span class="w"> </span><span class="err">amo</span><span class="w"> </span><span class="err">o</span><span class="w"> </span><span class="err">NeuralSeek.</span><span class="w"> </span><span class="err">É</span><span class="w"> </span><span class="err">o</span><span class="w"> </span><span class="err">melhor</span><span class="w"> </span><span class="err">so</span><span class="kc">ft</span><span class="err">ware</span><span class="w"> </span><span class="err">do</span><span class="w"> </span><span class="err">mu</span><span class="kc">n</span><span class="err">do.</span><span class="p">,</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="err">co</span><span class="kc">nte</span><span class="err">x</span><span class="kc">t</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="err">user_sessio</span><span class="kc">n</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="err">me</span><span class="kc">ta</span><span class="err">da</span><span class="kc">ta</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">      </span><span class="err">user_id</span><span class="p">:</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span><span class="err">sys</span><span class="kc">te</span><span class="err">m</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">      </span><span class="err">sessio</span><span class="kc">n</span><span class="err">_id</span><span class="p">:</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">  </span><span class="p">},</span>
+</span></code></pre></div>
+<p>A resposta terá uma pontuação de sentimento mais alta:</p>
+<div class="language-JSON highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="err">a</span><span class="kc">ns</span><span class="err">wer</span><span class="p">:</span><span class="w"> </span><span class="err">Obrigado</span><span class="w"> </span><span class="err">por</span><span class="w"> </span><span class="err">compar</span><span class="kc">t</span><span class="err">ilhar</span><span class="w"> </span><span class="err">seu</span><span class="w"> </span><span class="kc">fee</span><span class="err">dback</span><span class="w"> </span><span class="err">posi</span><span class="kc">t</span><span class="err">ivo</span><span class="w"> </span><span class="err">sobre</span><span class="w"> </span><span class="err">o</span><span class="w"> </span><span class="err">NeuralSeek.</span><span class="w"> </span><span class="err">Não</span><span class="w"> </span><span class="err">posso</span><span class="w"> </span><span class="kc">ter</span><span class="w"> </span><span class="err">opi</span><span class="kc">n</span><span class="err">iões</span><span class="w"> </span><span class="err">pessoais</span><span class="p">,</span><span class="w"> </span><span class="err">mas</span><span class="w"> </span><span class="kc">f</span><span class="err">ico</span><span class="w"> </span><span class="kc">fel</span><span class="err">iz</span><span class="w"> </span><span class="err">em</span><span class="w"> </span><span class="err">ouvir</span><span class="w"> </span><span class="err">que</span><span class="w"> </span><span class="err">você</span><span class="w"> </span><span class="err">co</span><span class="kc">ns</span><span class="err">idera</span><span class="w"> </span><span class="err">o</span><span class="w"> </span><span class="err">NeuralSeek</span><span class="w"> </span><span class="err">o</span><span class="w"> </span><span class="err">melhor</span><span class="w"> </span><span class="err">so</span><span class="kc">ft</span><span class="err">ware</span><span class="w"> </span><span class="err">do</span><span class="w"> </span><span class="err">mu</span><span class="kc">n</span><span class="err">do.</span><span class="p">,</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="err">cachedResul</span><span class="kc">t</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="err">la</span><span class="kc">n</span><span class="err">gCode</span><span class="p">:</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="err">se</span><span class="kc">nt</span><span class="err">ime</span><span class="kc">nt</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="kc">t</span><span class="err">o</span><span class="kc">tal</span><span class="err">Cou</span><span class="kc">nt</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="err">KBscore</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">  </span><span class="err">score</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">  </span><span class="err">url</span><span class="p">:</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//neuralseek.com/faq,</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">  </span><span class="err">docume</span><span class="kc">nt</span><span class="p">:</span><span class="w"> </span><span class="err">FAQ</span><span class="w"> </span><span class="mi">-</span><span class="w"> </span><span class="err">NeuralSeek</span><span class="p">,</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">  </span><span class="err">kbTime</span><span class="p">:</span><span class="w"> </span><span class="mi">5385</span><span class="p">,</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">  </span><span class="err">kbCoverage</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">  </span><span class="kc">t</span><span class="err">ime</span><span class="p">:</span><span class="w"> </span><span class="mi">7094</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="p">}</span>
+</span></code></pre></div>
+</details>
+<h2 id="replay">Replay<a class="headerlink" href="#replay" title="Permanent link"></a></h2>
+<p><strong>O que é?</strong></p>
+<ul>
+<li>O recurso Replay no NeuralSeek permite que os usuários revisitem perguntas anteriormente registradas e suas respostas correspondentes, análise semântica e a documentação da Base de Conhecimento usada para gerar a resposta naquele momento.</li>
+</ul>
+<p><strong>Por que é importante?</strong></p>
+<ul>
+<li>À medida que a documentação em nossa Base de Conhecimento é atualizada, as perguntas na guia Seek são atualizadas para levar em conta essa nova informação. Como resultado, um usuário poderia fazer uma pergunta idêntica a uma feita anteriormente e receber uma resposta completamente diferente, se a documentação tiver sido significativamente alterada.
+Se alguém quiser voltar a uma resposta anterior e notar as alterações ocorridas na documentação para ver como as respostas evoluem, o recurso de Replay é muito útil para obter algumas informações.</li>
+</ul>
+<p><strong>Como funciona?</strong></p>
+<ul>
+<li>Primeiro, verifique se você tem o Registro Corporativo habilitado com uma instância do Elasticsearch. Você pode encontrar as configurações para o Registro Corporativo abaixo da guia <code>Configurar</code>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/corporate-logging.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="corporate-logging" src="../../../../../curate/features/advanced_features/images/corporate-logging.png" /></a></p>
+<ul>
+<li>Navegue até a guia <code>Logs</code> no Neuralseek. Lá, você encontrará um registro de todas as perguntas e respostas feitas anteriormente na guia <code>Seek</code>. Observe o pequeno ícone abaixo da resposta que se assemelha a um relógio girando para trás. Ao clicar nele, você será levado à página como ela aparecia naquele momento específico.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/location.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="location" src="../../../../../curate/features/advanced_features/images/location.png" /></a></p>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/previous-answer.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="previous-answer" src="../../../../../curate/features/advanced_features/images/previous-answer.png" /></a>
+<a class="glightbox" href="../../../../../curate/features/advanced_features/images/previous-context.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="previous-context" src="../../../../../curate/features/advanced_features/images/previous-context.png" /></a></p>
+<ul>
+<li>Se a documentação usada para responder à pergunta tiver sido atualizada, você pode comparar e contrastar os resultados fazendo a mesma pergunta na guia <code>Seek</code>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../curate/features/advanced_features/images/current-answer.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="current-answer" src="../../../../../curate/features/advanced_features/images/current-answer.png" /></a>
+<a class="glightbox" href="../../../../../curate/features/advanced_features/images/current-context.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="current-context" src="../../../../../curate/features/advanced_features/images/current-context.png" /></a></p>
+<h2 id="entendimento_de_tabelas">Entendimento de Tabelas<a class="headerlink" href="#entendimento_de_tabelas" title="Permanent link"></a></h2>
+<p><strong>O que é?</strong></p>
+<ul>
+<li>Extração de Tabelas, também conhecida como <code>Entendimento de Tabelas</code>, pré-processa seus documentos para extrair e analisar dados de tabelas em um formato adequado para consultas conversacionais. Como esse processo de preparação é tanto <strong>oneroso</strong> quanto <strong>demorado</strong>, esse recurso é opt-in e consumirá 1 consulta de busca para cada tabela pré-processada. Além disso, deve-se observar que as Coleções de Rastreamento da Web não são elegíveis para o entendimento de tabelas, pois o intervalo de recrawl causará um uso excessivo de computação. O tempo de preparação da tabela leva vários minutos por página.</li>
+</ul>
+<p><strong>Por que é importante?</strong></p>
+<ul>
+<li>Ser capaz de entender dados em estrutura tabular em documentos e gerar respostas é uma capacidade importante para o NeuralSeek, a fim de encontrar os dados relevantes para responder.</li>
+</ul>
+<p><strong>Como funciona?</strong></p>
+<ul>
+<li>Para encontrar a extração de tabelas, abra sua instância do NeuralSeek e vá para a <code>Configurar</code>.</li>
+<li>Selecione Entendimento de Tabelas</li>
+</ul>
+<blockquote>
+<p>⚠️ Observação para usuários de planos lite/teste - para poder acessar e usar esse recurso, você precisará entrar em contato com cloud@cerebralblue.com com detalhes da sua oportunidade e caso de uso para ser elegível.</p>
+</blockquote>
+<ul>
+<li>
+<p>Depois de ter tudo configurado, vá para o <code>Watson Discovery</code> e, se você ainda não tiver, <code>crie um projeto e importe um arquivo PDF</code> que contenha algumas tabelas.</p>
+</li>
+<li>
+<p>Depois de ter o projeto, copie as informações da API e volte para a <code>Configurar</code> no NeuralSeek. Role para baixo até Entendimento de Tabelas, cole o ID do projeto, salve e vá para a guia <code>Seek</code>.</p>
+</li>
+<li>
+<p>Com tudo configurado, faça algumas perguntas relacionadas aos dados dentro da tabela no arquivo PDF.</p>
+</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Quais foram as emissões de GEE para viagens de negócios em 2021?
+</span></code></pre></div>
+<p>Você também pode fazer perguntas sobre um local ou nome específico e, se houver várias tabelas com dados, o NeuralSeek pegará de cada tabela e fornecerá tudo.</p>
+<h2 id="modelos_de_linguagem_multimodais_no_maistro">Modelos de Linguagem Multimodais no mAIstro<a class="headerlink" href="#modelos_de_linguagem_multimodais_no_maistro" title="Permanent link"></a></h2>
+<p><strong>O que é?</strong></p>
+<p>As capacidades multimodais em modelos de linguagem de grande porte (LLMs) se referem à sua capacidade de processar e gerar conteúdo em várias modalidades, como texto, imagens e até mesmo áudio. Isso permite que os LLMs entendam e interajam com o mundo de uma maneira mais holística e natural, indo além das interações baseadas apenas em texto.</p>
+<p><strong>Por que é importante?</strong></p>
+<p>As capacidades multimodais são cruciais para uma ampla gama de aplicações, particularmente em áreas como resposta a perguntas visuais, legendagem de imagens e geração de texto a partir de imagens.
+Esses recursos permitem que os LLMs entendam e raciocinem sobre o mundo de uma maneira mais abrangente, permitindo interações mais intuitivas e amigáveis ao usuário.</p>
+<p><strong>Como funciona?</strong></p>
+<p>Os LLMs multimodais geralmente aproveitam técnicas como aprendizado por transferência, em que o modelo é primeiro treinado em um grande corpus de dados de texto e, em seguida, ajustado em conjuntos de dados que combinam texto e imagens. Isso permite que o modelo aprenda as relações entre informações visuais e textuais, permitindo que ele gere respostas relevantes e coerentes a consultas que envolvem ambas as modalidades.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Ⓒ 2024 NeuralSeek, all rights reserved.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "toc.follow", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
