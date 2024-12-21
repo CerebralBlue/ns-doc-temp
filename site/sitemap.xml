@@ -31,10 +31,10 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/chat/"/>
     </url>
     <url>
-        <loc>https://documentation.neuralseek.com/chat/guides/chat_sdk_integration/chat_sdk_integration/</loc>
+        <loc>https://documentation.neuralseek.com/chat/guides/</loc>
         <lastmod>2024-12-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/chat/guides/chat_sdk_integration/chat_sdk_integration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/chat/guides/"/>
     </url>
     <url>
         <loc>https://documentation.neuralseek.com/configure/</loc>
@@ -61,28 +61,10 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/configure/features/language_capabilities/language_capabilities/"/>
     </url>
     <url>
-        <loc>https://documentation.neuralseek.com/configure/guides/multimodal/multimodal/</loc>
+        <loc>https://documentation.neuralseek.com/configure/guides/</loc>
         <lastmod>2024-12-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/configure/guides/multimodal/multimodal/"/>
-    </url>
-    <url>
-        <loc>https://documentation.neuralseek.com/configure/guides/proposals/proposals/</loc>
-        <lastmod>2024-12-21</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/configure/guides/proposals/proposals/"/>
-    </url>
-    <url>
-        <loc>https://documentation.neuralseek.com/configure/guides/semantic_model/semantic_model/</loc>
-        <lastmod>2024-12-21</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/configure/guides/semantic_model/semantic_model/"/>
-    </url>
-    <url>
-        <loc>https://documentation.neuralseek.com/configure/guides/tuning_guide/tuning_guide/</loc>
-        <lastmod>2024-12-21</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/configure/guides/tuning_guide/tuning_guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/configure/guides/"/>
     </url>
     <url>
         <loc>https://documentation.neuralseek.com/curate/</loc>
@@ -103,10 +85,10 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/curate/features/conversational_capabilities/conversational_capabilities/"/>
     </url>
     <url>
-        <loc>https://documentation.neuralseek.com/curate/guides/training_virtual_agents/training_virtual_agents/</loc>
+        <loc>https://documentation.neuralseek.com/curate/guides/</loc>
         <lastmod>2024-12-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/curate/guides/training_virtual_agents/training_virtual_agents/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/curate/guides/"/>
     </url>
     <url>
         <loc>https://documentation.neuralseek.com/extract/</loc>
@@ -125,6 +107,60 @@
         <lastmod>2024-12-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/governance/features/governance_metrics/governance_metrics/"/>
+    </url>
+    <url>
+        <loc>https://documentation.neuralseek.com/guides/</loc>
+        <lastmod>2024-12-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/guides/"/>
+    </url>
+    <url>
+        <loc>https://documentation.neuralseek.com/guides/data/dynamic_filters/</loc>
+        <lastmod>2024-12-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/guides/data/dynamic_filters/"/>
+    </url>
+    <url>
+        <loc>https://documentation.neuralseek.com/guides/data/proposals/</loc>
+        <lastmod>2024-12-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/guides/data/proposals/"/>
+    </url>
+    <url>
+        <loc>https://documentation.neuralseek.com/guides/data/tuning_guide/</loc>
+        <lastmod>2024-12-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/guides/data/tuning_guide/"/>
+    </url>
+    <url>
+        <loc>https://documentation.neuralseek.com/guides/data/virtual_kb/</loc>
+        <lastmod>2024-12-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/guides/data/virtual_kb/"/>
+    </url>
+    <url>
+        <loc>https://documentation.neuralseek.com/guides/integration/chat_sdk_integration/</loc>
+        <lastmod>2024-12-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/guides/integration/chat_sdk_integration/"/>
+    </url>
+    <url>
+        <loc>https://documentation.neuralseek.com/guides/integration/training_virtual_agents/</loc>
+        <lastmod>2024-12-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/guides/integration/training_virtual_agents/"/>
+    </url>
+    <url>
+        <loc>https://documentation.neuralseek.com/guides/models/multimodal/</loc>
+        <lastmod>2024-12-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/guides/models/multimodal/"/>
+    </url>
+    <url>
+        <loc>https://documentation.neuralseek.com/guides/models/semantic_model/</loc>
+        <lastmod>2024-12-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/guides/models/semantic_model/"/>
     </url>
     <url>
         <loc>https://documentation.neuralseek.com/home/</loc>
@@ -307,21 +343,21 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/maistro/features/visual_editor/visual_editor/"/>
     </url>
     <url>
-        <loc>https://documentation.neuralseek.com/maistro/guides/dynamic_filters/dynamic_filters/</loc>
+        <loc>https://documentation.neuralseek.com/maistro/guides/</loc>
         <lastmod>2024-12-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/maistro/guides/dynamic_filters/dynamic_filters/"/>
-    </url>
-    <url>
-        <loc>https://documentation.neuralseek.com/maistro/guides/virtual_kb/virtual_kb/</loc>
-        <lastmod>2024-12-21</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/maistro/guides/virtual_kb/virtual_kb/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/maistro/guides/"/>
     </url>
     <url>
         <loc>https://documentation.neuralseek.com/seek/</loc>
         <lastmod>2024-12-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/seek/"/>
+    </url>
+    <url>
+        <loc>https://documentation.neuralseek.com/seek/guides/</loc>
+        <lastmod>2024-12-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/seek/guides/"/>
     </url>
 </urlset>
