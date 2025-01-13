@@ -3004,7 +3004,7 @@
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h2>
 <p><strong>What is it?</strong></p>
 <ul>
-<li>The 'Thumbs Up/Thumbs Down' icons are available after each response given in the 'Seek' tab of NeuralSeek's UI. These responses indicate a score of 5 for Thumbs Up and 0 for Thumbs Down. These icons are available to be shown and utilized in-line with the conversation. </li>
+<li>The Thumbs Up/Thumbs Down icons are available after each response given in the Seek tab of NeuralSeek's UI. These responses indicate a score of 5 for Thumbs Up and 0 for Thumbs Down. These icons are available to be shown and utilized in-line with the conversation. </li>
 </ul>
 <p><strong>Why is it important?</strong></p>
 <ul>
@@ -3012,40 +3012,41 @@
 </ul>
 <p><strong>How does it work?</strong></p>
 <ul>
-<li>After a query is submitted in NeuralSeek's 'Seek' tab, users can simply click either the 'Thumbs Up' icon or the 'Thumbs Down' icon based on their impression of the generated response. The response is then tracked and recorded within the relevant intent on NeuralSeek's 'Curate' tab. Users are able to implement the icons into a virtual agent by using the uniquely generated SVG URL provided after each response. See below for information on using 'iframe' response type to integrate these feedback icons within the IBM virtual agent watsonx Assistant.</li>
+<li>After a query is submitted in NeuralSeek's Seek tab, users can simply click either the 'Thumbs Up' icon or the 'Thumbs Down' icon based on their impression of the generated response. The response is then tracked and recorded within the relevant intent on NeuralSeek's 'Curate' tab. Users are able to implement the icons into a virtual agent by using the uniquely generated SVG URL provided after each response. See below for information on using 'iframe' response type to integrate these feedback icons within the IBM virtual agent watsonx Assistant.</li>
 </ul>
 <h2 id="integrating_thumbs_with_watsonx_assistant">Integrating Thumbs with watsonx Assistant<a class="headerlink" href="#integrating_thumbs_with_watsonx_assistant" title="Permanent link"></a></h2>
-<p>Users are able to easily integrate the 'Thumbs Up/Thumbs Down' feedback icons as an 'iframe' response type within watsonx Assistant. The content, embeddable as an HTML iframe element, allows users to interact with NeuralSeek's rating endpoint seamlessly without leaving the chat by displaying the thumbs icons directly in the conversation. </p>
-<p>To include the 'Thumbs Up/Thumbs Down' icons within watsonx:</p>
+<p>Users are able to easily integrate the <strong>Thumbs Up/Thumbs Down</strong> feedback icons as an <strong>iframe</strong> response type within watsonx Assistant. The content, embeddable as an HTML iframe element, allows users to interact with NeuralSeek's rating endpoint seamlessly without leaving the chat by displaying the thumbs icons directly in the conversation. </p>
+<p>To include the <strong>Thumbs Up/Thumbs Down</strong> icons within watsonx:</p>
 <ol>
-<li>Navigate to the watsonx Assistant instance, and open an Action.</li>
-<li>In the 'Assistant says' field within the relevant conversation step, click the 'iframe' icon.</li>
-<li>Set the 'Source URL' to the NeuralSeek step response 'body.thumbs'<ul>
+<li>Navigate to the watsonx Assistant instance, and open an <strong>Action</strong>.</li>
+<li>In the <strong>Assistant says</strong> field within the relevant conversation step, click the <strong>iframe</strong> icon.</li>
+<li>Set the <strong>Source URL</strong> to the NeuralSeek step response <strong>body.thumbs</strong><ul>
 <li>Optionally, users can include a query parameter for background-color to the thumbs url given: <code>?style=background-color%3A%23f4f4f4</code></li>
 </ul>
 </li>
-<li>Optionally, add a descriptive title in the 'Title' field. </li>
-<li>Toggle the 'Display iframe inline' button to 'On' to display the thumbs icons inline with the conversation.</li>
-<li>Set the 'iframe height' to 45 for proper viewing. </li>
-<li>Click 'Apply' to save response type. </li>
+<li>Optionally, add a descriptive title in the <strong>Title</strong> field. </li>
+<li>Toggle the <strong>Display iframe inline</strong> button to <strong>On</strong> to display the thumbs icons inline with the conversation.</li>
+<li>Set the <strong>iframe height</strong> to 45 for proper viewing. </li>
+<li>Click <strong>Apply</strong> to save response type. </li>
 </ol>
 <p><a class="glightbox" href="../images/iframe_response_type_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="iframe_response_type_1" src="../images/iframe_response_type_1.png" /></a>
 <a class="glightbox" href="../images/iframe_response_type_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="iframe_response_type_2" src="../images/iframe_response_type_2.png" /></a></p>
 <h2 id="viewing_ratings_in_neuralseek">Viewing Ratings in NeuralSeek<a class="headerlink" href="#viewing_ratings_in_neuralseek" title="Permanent link"></a></h2>
-<p>Feedback from utilizing the 'Thumbs Up/Thumbs Down' icons in NeuralSeek's 'Seek' tab can be viewed from the 'Curate' tab. </p>
+<p>Feedback from utilizing the Thumbs Up/Thumbs Down icons in NeuralSeek's Seek tab can be viewed from the Curate tab. </p>
 <ol>
-<li>Navigate to the 'Curate' tab within NeuralSeek's interface.</li>
+<li>Navigate to the <strong>Curate</strong> tab within NeuralSeek's interface.</li>
 <li>Expand desired intents by clicking the down-caret.</li>
 </ol>
 <p><a class="glightbox" href="../images/curate_star_rating.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="curate stars" src="../images/curate_star_rating.png" /></a></p>
-<ol>
+<ol start="3">
 <li>Optionally, Select desired intents by checking the box.</li>
-<li>Click the blue 'Download to CSV' button.</li>
-<li>A CSV file will be downloaded to the user's local machine. There, they can view the rating given from the 'Thumbs Up/Thumbs Down' icons in the 'Response' column. <ul>
-<li>Note: A score of 5 is given for a 'Thumbs Up'. A score of 0 is given for a 'Thumbs Down'. The score shown is an average of all ratings.</li>
-</ul>
-</li>
+<li>Click the blue <strong>Download to CSV</strong> button.</li>
+<li>A CSV file will be downloaded to the user's local machine. There, they can view the rating given from the Thumbs Up/Thumbs Down icons in the <strong>Response</strong> column. </li>
 </ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A score of 5 is given for a 'Thumbs Up'. A score of 0 is given for a 'Thumbs Down'. The score shown is an average of all ratings.</p>
+</div>
 <p><a class="glightbox" href="../images/download_csv_new.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="download_csv" src="../images/download_csv_new.png" /></a>
 <a class="glightbox" href="../images/csv_rating.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="csv_rating" src="../images/csv_rating.png" /></a></p>
 <h2 id="integrating_custom_ratings_via_api">Integrating Custom Ratings via API<a class="headerlink" href="#integrating_custom_ratings_via_api" title="Permanent link"></a></h2>
@@ -3053,12 +3054,12 @@
 <p>POSTs to the <code>/seek</code> endpoint return a parameter <code>answerID</code>. You may pass this answer ID to the <code>/rate</code> endpoint with a number <code>0-5</code> to manually 'rate' a given answer.</p>
 <p>To try it out:</p>
 <ol>
-<li>Navigate to the 'Integrate' tab within NeuralSeek's interface.</li>
-<li>Select 'API' from the side menu. </li>
-<li>Click the 'Authorize' button, and enter the given API key on the screen.</li>
-<li>Select the 'Seek' drop down option and post a query to <code>/seek</code>. </li>
+<li>Navigate to the <strong>Integrate</strong> tab within NeuralSeek's interface.</li>
+<li>Select <strong>API</strong> from the side menu. </li>
+<li>Click the <strong>Authorize</strong> button, and enter the given API key on the screen.</li>
+<li>Select the <strong>Seek</strong> drop down option and post a query to <code>/seek</code>. </li>
 <li>Pull the <code>answerID</code> return parameter from this <code>seek</code> query. E.g. <code>76574849</code></li>
-<li>Select the 'Rate' drop down option to see options of the <code>/rate</code> endpoint. For example POST data:</li>
+<li>Select the <strong>Rate</strong> drop down option to see options of the <code>/rate</code> endpoint. For example POST data:</li>
 </ol>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{ 
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    &quot;answerID: &quot;76574849&quot;

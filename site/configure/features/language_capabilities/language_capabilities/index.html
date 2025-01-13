@@ -3126,9 +3126,10 @@
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nt">&quot;target&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ko&quot;</span>
 </span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">},</span>
 </span></code></pre></div>
-<blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>For more details on what language codes are supported, please refer to <a href="./#multi_language_support">Multi Language Support</a>.</p>
-</blockquote>
+</div>
 <p>NeuralSeek would then translate the given text into the target language <code>ko</code> which is Korean:</p>
 <div class="language-JSON highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nt">&quot;word_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">39</span><span class="p">,</span>
@@ -3435,7 +3436,8 @@
 <li><strong>Retrieving the Answer</strong>: NeuralSeek retrieves the answer from the LLM in their native language.</li>
 <li><strong>Delivering the Response</strong>: The user receives the response in their native language.</li>
 </ol>
-<p><strong>Example Scenario</strong></p>
+<details class="note">
+<summary>Example Scenario</summary>
 <p>Question in Spanish, KB in English</p>
 <ol>
 <li><strong>User Query</strong>: "¿Cuál es la capital de Francia?"</li>
@@ -3459,6 +3461,7 @@
 <li><strong>Enter a Question in Spanish</strong>: Test the configuration by entering a question in Spanish, such as "¿Cuál es la capital de Francia?"</li>
 <li><strong>Observe the Response</strong>: NeuralSeek should translate the question, query the English knowledge base, and return the response in the desired language: "La capital de Francia es París."</li>
 </ul>
+</details>
 
 
 

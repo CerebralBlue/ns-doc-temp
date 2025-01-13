@@ -3257,9 +3257,10 @@
 <h3 id="configuring_semantic_analytics">Configuring Semantic Analytics<a class="headerlink" href="#configuring_semantic_analytics" title="Permanent link"></a></h3>
 <p>Configuration option for Semantic analysis is found under <code>Configure &gt; Confidence &amp; Warning</code> Thresholds . The semantic score model is enabled by default, but you can also disable it. You can also enable whether the semantic analysis should be used for confidence, and for reranking the search results from the knowledge base according to how much they semantically match. There are also sections for controlling how the analysis can apply penalties for missing key terms, search terms, or how frequent the sources are jumped (fragmented in the generated answer).</p>
 <p><a class="glightbox" href="../images/image_003.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="configuring semantic analytics" src="../images/image_003.png" /></a></p>
-<blockquote>
-<p>❓ How re-ranking the search result using semantic analysis can be helpful? Having an option to re-rank the resulting KnowledgeBase search results can ensure the list of search results to appear in the order that corresponds better to the answer provided. That is because sometimes the search results returned from the KnowledgeBase do not align perfectly with the answer, and thus the provided URL of the resulting document can be misleading.</p>
-</blockquote>
+<div class="admonition question">
+<p class="admonition-title">How re-ranking the search result using semantic analysis can be helpful?</p>
+<p>Having an option to re-rank the resulting KnowledgeBase search results can ensure the list of search results to appear in the order that corresponds better to the answer provided. That is because sometimes the search results returned from the KnowledgeBase do not align perfectly with the answer, and thus the provided URL of the resulting document can be misleading.</p>
+</div>
 <h3 id="using_semantic_analysis">Using Semantic Analysis<a class="headerlink" href="#using_semantic_analysis" title="Permanent link"></a></h3>
 <p>In the ‘Seek’ tab of NeuralSeek, you can provide a question, and be given an answer from NeuralSeek. When enabling the ‘Provenance’, this will give you the color-coded portion of the response that were directly originated from those results.</p>
 <p><a class="glightbox" href="../images/answer_provenance_updated2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="turning on provenance" src="../images/answer_provenance_updated2.png" /></a> <!--{: style="width:25%" }--></p>
@@ -3285,12 +3286,12 @@
 <p><a class="glightbox" href="../images/image_011.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="kb score and date penalty settings" src="../images/image_011.png" /></a></p>
 <p>When the results say, '4 filtered by date penalty or score range', it means these settings came into play when retrieving relevant information from the KnowledgeBase.</p>
 <h3 id="examples_of_semantic_analysis">Examples of Semantic Analysis<a class="headerlink" href="#examples_of_semantic_analysis" title="Permanent link"></a></h3>
-<p><strong>High score example</strong>
-<a class="glightbox" href="../images/high-example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="example high score" src="../images/high-example.png" /></a></p>
-<p><strong>Medium score example</strong>
-<a class="glightbox" href="../images/medium-example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="example med score" src="../images/medium-example.png" /></a></p>
-<p><strong>Low score example</strong>
-<a class="glightbox" href="../images/low-example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="example low score" src="../images/low-example.png" /></a></p>
+<p><strong>High score example</strong></p>
+<p><a class="glightbox" href="../images/high-example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="example high score" src="../images/high-example.png" /></a></p>
+<p><strong>Medium score example</strong></p>
+<p><a class="glightbox" href="../images/medium-example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="example med score" src="../images/medium-example.png" /></a></p>
+<p><strong>Low score example</strong></p>
+<p><a class="glightbox" href="../images/low-example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="example low score" src="../images/low-example.png" /></a></p>
 <h2 id="sentiment_analysis">Sentiment Analysis<a class="headerlink" href="#sentiment_analysis" title="Permanent link"></a></h2>
 <p><strong>What is it?</strong></p>
 <ul>
@@ -3404,9 +3405,10 @@
 <li>To find table extraction, open up your instance of NeuralSeek and head over to the <code>Configure</code>.</li>
 <li>Select Table understanding</li>
 </ul>
-<blockquote>
-<p>⚠️ Note for users of lite/trial plans - to be able to access and use this feature you will have to contact cloud@cerebralblue.com with details of your opportunity and use case to be eligible.</p>
-</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Note for users of lite/trial plans</p>
+<p>To be able to access and use this feature you will have to contact cloud@cerebralblue.com with details of your opportunity and use case to be eligible.</p>
+</div>
 <ul>
 <li>
 <p>Once you have everything set, go over to <code>Watson Discovery</code>, and if you don’t already, <code>create a project and import a pdf file</code> that contains some tables.</p>

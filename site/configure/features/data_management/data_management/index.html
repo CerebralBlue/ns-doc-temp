@@ -522,6 +522,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Answer Cache">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detecting_changes_in_the_original_source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detecting changes in the original source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how_do_we_know_the_answers_are_coming_from_cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do we know the answers are coming from cache?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -2998,6 +3022,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Answer Cache">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detecting_changes_in_the_original_source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detecting changes in the original source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how_do_we_know_the_answers_are_coming_from_cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do we know the answers are coming from cache?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -3071,17 +3119,18 @@
 <p>The matching method (Exact Match, Fuzzy Match, etc.) is the method you can specify to tell NeuralSeek on how to perform the intent matching on the question.</p>
 <p>There is also a more advanced matching method of ‘Exact Match, exact conversational context’ on the normal answers that would try to find the match if the consecutive conversation (e.g. one and the one after) both have the matching result, so that the match could be more correct in terms of how the conversation flow is occurring.</p>
 <p>In terms of the edited answers, this ‘conversational context’ matching is not provided given that the edited answers should be more concise and based on a more substantial ground and thus should not rely on the conversational context.</p>
-<p><strong>Detecting changes in the original source</strong>
-In order to make sure the cached answers retain the authenticity, every cached answers are fed into a hashing algorithm to generate a unique hash key, which is then compared with the original source to detect whether the original source has been altered or not.</p>
+<h4 id="detecting_changes_in_the_original_source">Detecting changes in the original source<a class="headerlink" href="#detecting_changes_in_the_original_source" title="Permanent link"></a></h4>
+<p>In order to make sure the cached answers retain the authenticity, every cached answers are fed into a hashing algorithm to generate a unique hash key, which is then compared with the original source to detect whether the original source has been altered or not.</p>
 <p>If the hash keys do not match, NeuralSeek will notify users that the answers are not up-to-date with what’s found in the KnowledgeBase. This would happen when a particular answer is being used during the Seek time, so that the answer would be kept in check with the original.</p>
 <p><a class="glightbox" href="../images/image_004.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="out of date data in kb" src="../images/image_004.png" /></a></p>
 <p>Users can then take a look at the outdated answer, and can either delete and reload it, or edit it and then mark it as current, so that NeuralSeek will be able to check it off from its outdated list.</p>
 <p><a class="glightbox" href="../images/image_005.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="acknowledge of currency" src="../images/image_005.png" /></a></p>
-<blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>One other way the answer would be checked is when NeuralSeek is handling round trip logging. During that time, NeuralSeek would check which answers are getting frequently returned and also perform asynchronous checks with the KnowledgeBase to make sure they are up-to-date.</p>
-</blockquote>
-<p><strong>How do we know the answers are coming from cache?</strong>
-You can check whether your query matched and returned the cached answer in the <code>Seek</code> tab. For example, this is an example of the answer returned from the cache.</p>
+</div>
+<h4 id="how_do_we_know_the_answers_are_coming_from_cache">How do we know the answers are coming from cache?<a class="headerlink" href="#how_do_we_know_the_answers_are_coming_from_cache" title="Permanent link"></a></h4>
+<p>You can check whether your query matched and returned the cached answer in the <code>Seek</code> tab. For example, this is an example of the answer returned from the cache.</p>
 <p><a class="glightbox" href="../images/image_006.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="answer from cache" src="../images/image_006.png" /></a></p>
 <p>Next to the <code>Total Response Time</code>, you will see a label <code>Cached</code> which indicates that the answer came straight from the cache.</p>
 <h2 id="content_analytics">Content Analytics<a class="headerlink" href="#content_analytics" title="Permanent link"></a></h2>

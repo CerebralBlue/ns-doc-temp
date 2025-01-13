@@ -3183,9 +3183,10 @@
 <p><a class="glightbox" href="../images/ES_connection_details.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="es_connection_details" src="../images/ES_connection_details.png" /></a>
 <a class="glightbox" href="../images/ES_manage_api_keys.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="es_manage_keys" src="../images/ES_manage_api_keys.png" /></a>
 <a class="glightbox" href="../images/ES_create_api_key.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="es_create_api_key" src="../images/ES_create_api_key.png" /></a></p>
-<blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p>Save these values in a safe place for later use. </p>
-</blockquote>
+</div>
 <h2 id="create_a_machine_learning_instance">Create a Machine Learning Instance<a class="headerlink" href="#create_a_machine_learning_instance" title="Permanent link"></a></h2>
 <p>Elastic requires a machine learning instance to run the NLP models required for vectorizing the data for indexing. </p>
 <ul>
@@ -3236,10 +3237,11 @@
 <li>Specify the <strong>identifier</strong> for the model in the Hugging Face model hub.</li>
 <li>Specify the <strong>NLP task type</strong> as <code>"text_embedding"</code>.</li>
 </ul>
-<blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p>It is recommended to use the <code>intflost/multilingual-e5-base</code> Hugging Face model to start. </p>
 <p>It may take time for the model to auto-start, up to a few hours.</p>
-</blockquote>
+</div>
 </details>
 <h2 id="create_source_index_and_upload_data">Create Source Index and Upload Data<a class="headerlink" href="#create_source_index_and_upload_data" title="Permanent link"></a></h2>
 <p>Indices can be created by either manually loading data using the _bulk API, or by using a client helper function which will create the index and load the data.</p>
@@ -3458,10 +3460,11 @@
 <li>Expand the Deployed model.</li>
 <li>Navigate to the <strong>Pipelines</strong> tab to view the <code>my-content-embesddings-pipeline</code> created in the above step. </li>
 </ul>
-<blockquote>
-<p>To confirm the task was run successfully, run the following command using the <strong>task ID</strong> produced in the response from the previous command.
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To confirm the task was run successfully, run the following command using the <strong>task ID</strong> produced in the response from the previous command:
 <code>GET _tasks/&lt;task_id&gt;</code>.</p>
-</blockquote>
+</div>
 <ul>
 <li>Verify the content embeddings are in the new destination index.<ul>
 <li>Navigate to Kibana.</li>
