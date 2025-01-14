@@ -1198,6 +1198,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#select_agent_plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select Agent Plan
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2991,6 +3000,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#select_agent_plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select Agent Plan
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3040,7 +3058,7 @@ Imports the contents of <code>agentName</code> into the current environment.</p>
 </details>
 <hr />
 <h4 id="use_agent_sandbox">Use Agent (Sandbox)<a class="headerlink" href="#use_agent_sandbox" title="Permanent link"></a></h4>
-<div class="language-ntl highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{{</span> maistroSandbox  <span class="p">|</span> <span class="na">template</span><span class="p">:</span> <span class="s">&quot;agentName&quot;</span> <span class="p">|</span> <span class="na">params</span><span class="p">:</span> <span class="s">&quot;&quot;</span> <span class="p">}}</span>
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{{</span> maistroSandbox  <span class="p">|</span> <span class="na">template</span><span class="p">:</span> <span class="s">&quot;agentName&quot;</span> <span class="p">|</span> <span class="na">params</span><span class="p">:</span> <span class="s">&quot;jsonParams&quot;</span> <span class="p">}}</span>
 </span></code></pre></div>
 <p>Executes the specified <code>agentName</code> in the current environment, returning only the agent's final output.</p>
 <details class="note">
@@ -3077,7 +3095,7 @@ Imports the contents of <code>agentName</code> into the current environment.</p>
 </details>
 <hr />
 <h4 id="select_agent">Select Agent<a class="headerlink" href="#select_agent" title="Permanent link"></a></h4>
-<div class="language-ntl highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{{</span> selectAgent  <span class="p">}}</span>
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{{</span> selectAgent <span class="p">|</span> <span class="na">registry</span><span class="p">:</span> <span class="s">&quot;registryName&quot;</span> <span class="p">|</span> <span class="na">query</span><span class="p">:</span> <span class="s">&quot;specifyQuery&quot;</span>  <span class="p">}}</span>
 </span></code></pre></div>
 <p>Allows you to choose an agent from a specified registry based on a given query. This functionality is essential for automating task delegation by dynamically selecting the most appropriate agent for a task.</p>
 <div class="admonition example">
@@ -3118,6 +3136,47 @@ Imports the contents of <code>agentName</code> into the current environment.</p>
 </span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="p">{{</span> maistro  <span class="p">|</span> <span class="na">template</span><span class="p">:</span> <span class="s">&quot;&lt;&lt; name: selectedAgent, prompt: false &gt;&gt;&quot;</span> <span class="p">}}</span>
 </span></code></pre></div>
 <p>This process enables seamless task execution by dynamically selecting and utilizing agents based on your workflow requirements.</p>
+</details>
+<hr />
+<h4 id="select_agent_plan">Select Agent Plan<a class="headerlink" href="#select_agent_plan" title="Permanent link"></a></h4>
+<p><div class="language-ntl highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p">{{</span> selectAgentPlan <span class="p">|</span> <span class="na">registry</span><span class="p">:</span> <span class="s">&quot;registryName&quot;</span> <span class="p">|</span> <span class="na">query</span><span class="p">:</span> <span class="s">&quot;specifyQuery&quot;</span>  <span class="p">}}</span>
+</span></code></pre></div>
+Allows to retrieve an ordered list of agents from a specified registry based on a provided query. This node functions similarly to the 'Select Agent' node and accepts the same parameters.</p>
+<div class="admonition example">
+<p class="admonition-title">Parameters</p>
+<ul>
+<li><strong>Registry</strong>: The Agent Registry to select from</li>
+<li><strong>Query</strong>: The query used to identify the correct agent</li>
+</ul>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Returns</p>
+<ul>
+<li>An ordered list of selected agent names</li>
+</ul>
+</div>
+<details class="note">
+<summary>Example Usage 1</summary>
+<p>Suppose you have an agent registry named <code>digital_tasks</code>. You want to retrieve agents capable of performing the following tasks in sequence:</p>
+<ul>
+<li>Send an approved pull request email</li>
+<li>Fetch posts data</li>
+<li>Extract objects from a video</li>
+</ul>
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p">{{</span> selectAgentPlan  <span class="p">|</span> <span class="na">registry</span><span class="p">:</span> <span class="s">&quot;digital_tasks&quot;</span> <span class="p">|</span> <span class="na">query</span><span class="p">:</span> <span class="s">&quot;Send approved pull request email, fetch posts data and extract objects present in video&quot;</span> <span class="p">}}</span>
+</span></code></pre></div>
+<p>The output will be an ordered string array of agent names:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>[&quot;send_email&quot;,&quot;fetch_posts_data&quot;,&quot;subrun_video_extraction&quot;]
+</span></code></pre></div>
+<p>Once the agents are selected, you can store them in a variable and use them in subsequent nodes, such as the 'Use Agent' node, to execute each task in a loop:</p>
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="p">{{</span> selectAgentPlan  <span class="p">|</span> <span class="na">registry</span><span class="p">:</span> <span class="s">&quot;digital_tasks&quot;</span> <span class="p">|</span> <span class="na">query</span><span class="p">:</span> <span class="s">&quot;Send approved pull request email, fetch posts data and extract objects present in video&quot;</span> <span class="p">}}</span><span class="o">=&gt;</span><span class="p">{{</span> variable  <span class="p">|</span> <span class="na">name</span><span class="p">:</span> <span class="s">&quot;selectedAgents&quot;</span> <span class="p">}}</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="err">{</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="s">&quot;agentsList&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">&lt;&lt;</span> <span class="nv">name</span><span class="p">:</span> selectedAgents<span class="p">,</span> <span class="nv">prompt</span><span class="p">:</span> false <span class="p">&gt;&gt;</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="err">}</span><span class="o">=&gt;</span><span class="p">{{</span> jsonToVars  <span class="p">}}</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="p">{{</span> variableLoop  <span class="p">|</span> <span class="na">variable</span><span class="p">:</span> <span class="s">&quot;agentsList&quot;</span> <span class="p">|</span> <span class="na">loopType</span><span class="p">:</span> <span class="s">&quot;&quot;</span> <span class="p">}}</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="p">{{</span> maistro  <span class="p">|</span> <span class="na">template</span><span class="p">:</span> <span class="s">&quot;&lt;&lt; name: loopValue, prompt: false &gt;&gt;&quot;</span> <span class="p">}}</span>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="p">{{</span> endLoop  <span class="p">|</span> <span class="na">sleep</span><span class="p">:</span> <span class="s">&quot;0&quot;</span> <span class="p">}}</span>
+</span></code></pre></div>
 </details>
 <hr />
 
