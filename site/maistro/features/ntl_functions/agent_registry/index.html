@@ -1189,6 +1189,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#select_agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select Agent
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2973,6 +2982,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#select_agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select Agent
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3056,6 +3074,50 @@ Imports the contents of <code>agentName</code> into the current environment.</p>
 </span></code></pre></div>
 <p>This will pass the <code>userInfo</code> parameter to the sandboxed agent, resulting in the creation of a presentation card similar to the one shown below:</p>
 <p><a class="glightbox" href="../images/card_example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Card Example" src="../images/card_example.png" /></a></p>
+</details>
+<hr />
+<h4 id="select_agent">Select Agent<a class="headerlink" href="#select_agent" title="Permanent link"></a></h4>
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{{</span> selectAgent  <span class="p">}}</span>
+</span></code></pre></div>
+<p>Allows you to choose an agent from a specified registry based on a given query. This functionality is essential for automating task delegation by dynamically selecting the most appropriate agent for a task.</p>
+<div class="admonition example">
+<p class="admonition-title">Parameters</p>
+<ul>
+<li><strong>Registry</strong>: The Agent Registry to select from</li>
+<li><strong>Query</strong>: The query used to identify the correct agent</li>
+</ul>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Returns</p>
+<ul>
+<li>The selected agent name</li>
+</ul>
+</div>
+<p>Before using the 'Select Agent' node, ensure you have completed the following setup steps:</p>
+<ol>
+<li>
+<p><strong>Create a Registry</strong>: Establish an Agent Registry that will house your agents.</p>
+<p><a class="glightbox" href="../images/agent_registry.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Agents Registry" src="../images/agent_registry.png" /></a></p>
+</li>
+<li>
+<p><strong>Attach Agents to the Registry</strong>: Ensure that all relevant agents are properly attached to the registry.</p>
+<p><a class="glightbox" href="../images/attached_agents.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Agents Attached" src="../images/attached_agents.png" /></a></p>
+</li>
+</ol>
+<p>After the registry and agents have been set up, you can use the 'Select Agent' node to specify a registry and query:</p>
+<details class="note">
+<summary>Example Usage 1</summary>
+<p>Suppose you have an agents registry named <code>digital_tasks</code> with agents assigned to various tasks. You need to find an agent to handle the query <em>"Send approved pull request email"</em>.</p>
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">{{</span> selectAgent  <span class="p">|</span> <span class="na">registry</span><span class="p">:</span> <span class="s">&quot;digital_tasks&quot;</span> <span class="p">|</span> <span class="na">query</span><span class="p">:</span> <span class="s">&quot;Send approved pull request email&quot;</span> <span class="p">}}</span>
+</span></code></pre></div>
+<p>The node identifies <code>send_email</code> as the most suitable agent for the task:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>send_email
+</span></code></pre></div>
+<p>Once the agent is selected, you can store its name in a variable and use it in subsequent nodes like 'Use Agent':</p>
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">{{</span> selectAgent  <span class="p">|</span> <span class="na">registry</span><span class="p">:</span> <span class="s">&quot;digital_tasks&quot;</span> <span class="p">|</span> <span class="na">query</span><span class="p">:</span> <span class="s">&quot;Send approved pull request email&quot;</span> <span class="p">}}</span><span class="o">=&gt;</span><span class="p">{{</span> variable  <span class="p">|</span> <span class="na">name</span><span class="p">:</span> <span class="s">&quot;selectedAgent&quot;</span> <span class="p">}}</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="p">{{</span> maistro  <span class="p">|</span> <span class="na">template</span><span class="p">:</span> <span class="s">&quot;&lt;&lt; name: selectedAgent, prompt: false &gt;&gt;&quot;</span> <span class="p">}}</span>
+</span></code></pre></div>
+<p>This process enables seamless task execution by dynamically selecting and utilizing agents based on your workflow requirements.</p>
 </details>
 <hr />
 
