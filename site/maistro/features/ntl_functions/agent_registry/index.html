@@ -1180,6 +1180,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#use_agent_sandbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Agent (Sandbox)
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2955,6 +2964,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#use_agent_sandbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Agent (Sandbox)
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2973,34 +2991,71 @@
   <h1>Agent registry</h1>
 
 <h4 id="use_agent">Use Agent<a class="headerlink" href="#use_agent" title="Permanent link"></a></h4>
-<div class="language-ntl highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{{</span> <span class="na">maistro</span> <span class="p">:</span> <span class="s">&quot;agentName&quot;</span> <span class="p">}}</span>
+<p><div class="language-ntl highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{{</span> maistro <span class="p">|</span> <span class="na">template</span> <span class="p">:</span> <span class="s">&quot;agentName&quot;</span> <span class="p">}}</span>
 </span></code></pre></div>
-<p>Imports the contents of <code>agentName</code> into the current environment.</p>
+Imports the contents of <code>agentName</code> into the current environment.</p>
 <details class="note">
 <summary>Example Usage 1</summary>
 <p>Given an example agent, <code>neuralseek_updates</code>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Based on the changelogs found here:
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>{{ web|url:&quot;https://documentation.neuralseek.com/changelog/&quot; }}
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>list the items for the latest month.
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>{{ LLM }}
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">Based</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">changelogs</span><span class="w"> </span><span class="n">found</span><span class="w"> </span><span class="n">here</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">{{</span> web<span class="p">|</span><span class="na">url</span><span class="p">:</span><span class="s">&quot;https://documentation.neuralseek.com/changelog/&quot;</span> <span class="p">}}</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">list</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">items</span><span class="w"> </span><span class="n">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">latest</span><span class="w"> </span><span class="n">month.</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">{{</span> LLM <span class="p">}}</span>
 </span></code></pre></div>
-<p>Simply using <code>{{ maistro: "neuralseek_updates" }}</code> will produce the sample result.</p>
+<p>Simply using <code>{{ maistro | template: "neuralseek_updates" }}</code> will produce the sample result.</p>
 </details>
 <details class="note">
 <summary>Example Usage 2</summary>
 <p>To pass parameters to mAIstro agents, you simply define the variables in your current environment.</p>
 <p>Given an example agent, <code>neuralseek_updates</code>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Based on the changelogs found here:
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>{{ web|url:&quot;&lt;&lt; name:&#39;url&#39; &gt;&gt;&quot; }}
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>list the items for the latest month.
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>{{ LLM }}
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">Based</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">changelogs</span><span class="w"> </span><span class="n">found</span><span class="w"> </span><span class="n">here</span><span class="p">:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">{{</span> web<span class="p">|</span><span class="na">url</span><span class="p">:</span><span class="s">&quot;&lt;&lt; name:&#39;url&#39; &gt;&gt;&quot;</span> <span class="p">}}</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">list</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">items</span><span class="w"> </span><span class="n">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">latest</span><span class="w"> </span><span class="n">month.</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">{{</span> LLM <span class="p">}}</span>
 </span></code></pre></div>
 <p>To pass the <code>url</code> variable to the agent:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>{{ variable  | name: &quot;url&quot; | value: &quot;https://documentation.neuralseek.com/changelog/&quot; }}
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{{</span> variable  <span class="p">|</span> <span class="na">name</span><span class="p">:</span> <span class="s">&quot;url&quot;</span> <span class="p">|</span> <span class="na">value</span><span class="p">:</span> <span class="s">&quot;https://documentation.neuralseek.com/changelog/&quot;</span> <span class="p">}}</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>{{ maistro : &quot;neuralseek_updates&quot; }}
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">{{</span> maistro <span class="p">|</span> <span class="na">template</span> <span class="p">:</span> <span class="s">&quot;neuralseek_updates&quot;</span> <span class="p">}}</span>
 </span></code></pre></div>
 <p>This allows agents to be brought into current context, effectively "splicing" the contents into the desired context.</p>
+</details>
+<hr />
+<h4 id="use_agent_sandbox">Use Agent (Sandbox)<a class="headerlink" href="#use_agent_sandbox" title="Permanent link"></a></h4>
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{{</span> maistroSandbox  <span class="p">|</span> <span class="na">template</span><span class="p">:</span> <span class="s">&quot;agentName&quot;</span> <span class="p">|</span> <span class="na">params</span><span class="p">:</span> <span class="s">&quot;&quot;</span> <span class="p">}}</span>
+</span></code></pre></div>
+<p>Executes the specified <code>agentName</code> in the current environment, returning only the agent's final output.</p>
+<details class="note">
+<summary>Example Usage 1</summary>
+<p>Given an example agent, <code>video_loop</code>:</p>
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">Based</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">description</span><span class="p">,</span><span class="w"> </span><span class="n">extract</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">list</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">objects</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">video</span><span class="p">:</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">{{</span> maistroSandbox  <span class="p">|</span> <span class="na">template</span><span class="p">:</span> <span class="s">&quot;video_loop&quot;</span> <span class="p">|</span> <span class="na">params</span><span class="p">:</span> <span class="s">&quot;&quot;</span> <span class="p">}}</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">{{</span> LLM  <span class="p">|</span> <span class="na">prompt</span><span class="p">:</span> <span class="s">&quot;&quot;</span> <span class="p">|</span> <span class="na">cache</span><span class="p">:</span> <span class="s">&quot;true&quot;</span> <span class="p">}}</span>
+</span></code></pre></div>
+<p>Simply using <code>{{ maistroSandbox | template: "video_loop" }}</code> will only use the result within the sandboxed agent with something like:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Based on the description provided, the list of objects present in the video is:
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>Hands
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>Knitting needles/Crochet hooks
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>Textured fabric/Textile project
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>Mug/Cup
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>Coaster/Small mat
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>Crocheted/Knitted items
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>Couch/Chair
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>Blanket/Sheet
+</span></code></pre></div>
+</details>
+<hr />
+<details class="note">
+<summary>Example Usage 2</summary>
+<p>Let's consider an example agent called <code>generate_user_card</code> that creates a simple user presentation card:</p>
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{{</span> LLM <span class="p">|</span> <span class="na">prompt</span><span class="p">:</span> <span class="s">&quot;Create a simple user info JSON to render in a presentation card&quot;</span> <span class="p">|</span> <span class="na">cache</span><span class="p">:</span> <span class="s">&quot;true&quot;</span> <span class="p">}}</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="p">{{</span> extractCode <span class="p">}}</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="p">{{</span> variable <span class="p">|</span> <span class="na">name</span><span class="p">:</span> <span class="s">&quot;userInfoJson&quot;</span> <span class="p">|</span> <span class="na">mode</span><span class="p">:</span> <span class="s">&quot;&quot;</span> <span class="p">|</span> <span class="na">value</span><span class="p">:</span> <span class="s">&quot;&quot;</span> <span class="p">}}</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="p">{{</span> maistroSandbox <span class="p">|</span> <span class="na">template</span><span class="p">:</span> <span class="s">&quot;generate_user_card&quot;</span> <span class="p">|</span> <span class="na">params</span><span class="p">:</span> <span class="s">&quot;{\&quot;userInfo\&quot;: \&quot;&lt;&lt; name: userInfoJson, prompt: false &gt;&gt;\&quot;}&quot;</span> <span class="p">}}</span>
+</span></code></pre></div>
+<p>In this example, the <code>generate_user_card</code> agent takes the <code>userInfoJson</code> parameter and processes it in a sandboxed environment. You can achieve the same result by using:</p>
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{{</span> maistroSandbox <span class="p">|</span> <span class="na">template</span><span class="p">:</span> <span class="s">&quot;generate_user_card&quot;</span> <span class="p">|</span> <span class="na">params</span><span class="p">:</span> <span class="s">&quot;{\&quot;userInfo\&quot;: \&quot;&lt;&lt; name: userInfoJson, prompt: false &gt;&gt;\&quot;}&quot;</span> <span class="p">}}</span>
+</span></code></pre></div>
+<p>This will pass the <code>userInfo</code> parameter to the sandboxed agent, resulting in the creation of a presentation card similar to the one shown below:</p>
+<p><a class="glightbox" href="../images/card_example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Card Example" src="../images/card_example.png" /></a></p>
 </details>
 <hr />
 
