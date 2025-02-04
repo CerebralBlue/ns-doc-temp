@@ -585,6 +585,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secrets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#table_understanding" class="md-nav__link">
     <span class="md-ellipsis">
       Table Understanding
@@ -2967,6 +2976,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secrets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#table_understanding" class="md-nav__link">
     <span class="md-ellipsis">
       Table Understanding
@@ -3367,6 +3385,23 @@
 <p class="admonition-title">Remember</p>
 <p>Edited answers have priority in the Normal Answer Cache, followed by the most recent generated answer.</p>
 </div>
+</details>
+<h3 id="secrets">Secrets<a class="headerlink" href="#secrets" title="Permanent link"></a></h3>
+<p>Store secrets for use in mAIstro flows to protect sensitive data from view. Secrets you set here will be available as variables in mAIstro. Be sure to escape any double quotes in your Value with a backslash.</p>
+<p><a class="glightbox" href="images/secrets.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="secrets" src="images/secrets.png" /></a></p>
+<details class="abstract">
+<summary>Values</summary>
+<ul>
+<li><strong>Name:</strong> Name of your secret value.</li>
+<li><strong>Value:</strong> A variable that you want hidden from public view. Whenever this value is called, it will only be displayed as what you have set as its Name.</li>
+</ul>
+</details>
+<details class="example">
+<summary>Example</summary>
+<p>Suppose you have a Slack API code that you want to use in your mAIstro templates. Using Secrets, you can input the API code, while listing its name as simply "slack"</p>
+<p><a class="glightbox" href="images/slack1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="slack-code" src="images/slack1.png" /></a></p>
+<p>Once you save the updated configuration and head over to mAIstro, you'll be able to locate the slack API code, under its "slack" secret name, by clicking on the secrets tab in a blank text box</p>
+<p><a class="glightbox" href="images/slack2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="slack-maistro" src="images/slack2.png" /></a></p>
 </details>
 <h3 id="table_understanding">Table Understanding<a class="headerlink" href="#table_understanding" title="Permanent link"></a></h3>
 <p>This pre-processes your documents to extract and parse tabular data into a format suitable for conversational query. Since this preparation process is both costly and time-consuming, this feature is opt-in and will consume 1 seek query for every table preprocessed. Web Crawl Collections are not eligible for table understanding, as the re-crawl interval will cause excessive compute usage. Table preparation time takes several minutes per page. Please contact <a href="mailto:cloud@cerebralblue.com">cloud@cerebralblue.com</a> with details of your opportunity and use case to be considered for access.</p>
