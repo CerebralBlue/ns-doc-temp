@@ -25,12 +25,6 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/plans/"/>
     </url>
     <url>
-        <loc>https://documentation.neuralseek.com/configure/configuration_details/configuration_details/</loc>
-        <lastmod>2025-02-04</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/configure/configuration_details/configuration_details/"/>
-    </url>
-    <url>
         <loc>https://documentation.neuralseek.com/features/RT_logging/</loc>
         <lastmod>2025-02-04</lastmod>
         <changefreq>daily</changefreq>
