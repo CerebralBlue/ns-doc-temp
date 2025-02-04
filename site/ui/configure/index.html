@@ -467,6 +467,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#multi-agent_routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-Agent Routing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configuration_details" class="md-nav__link">
     <span class="md-ellipsis">
       Configuration Details
@@ -2840,6 +2849,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#multi-agent_routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-Agent Routing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configuration_details" class="md-nav__link">
     <span class="md-ellipsis">
       Configuration Details
@@ -3117,13 +3135,57 @@
 <ul>
 <li>For more information on each level in the Configure tab, refer to the Configuration Details outlined below. </li>
 </ul>
-<h2 id="configuration_details">Configuration Details<a class="headerlink" href="#configuration_details" title="Permanent link"></a></h2>
+<h2 id="multi-agent_routing">Multi-Agent Routing<a class="headerlink" href="#multi-agent_routing" title="Permanent link"></a></h2>
 <p>Enable NeuralSeek's <strong>Multi-Agent Routing</strong> in the bottom right corner of the Configure tab. This will allow users to connect different configurations based on defined categories of user queries and handle the interactions dynamically and more effectively.</p>
-<p>With Multi-Agent Routing, configuration nodes flow through a tree with defined <strong>categories</strong>. Categories are used to drive the path of the multi-agent flow. At each category in the tree you can specify a custom configuration that will be used by it and levels beneath it.Click on the category node and the familiar NeuralSeek Configuration panel will pop up.</p>
+<p><a class="glightbox" href="images/multi-agent-routing.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="multi-agent-routing" src="images/multi-agent-routing.png" /></a></p>
+<p>With Multi-Agent Routing, configuration nodes flow through a tree with defined <strong>categories</strong>. Categories are used to drive the path of the multi-agent flow. At each category in the tree you can specify a custom configuration that will be used by it and nested levels beneath it. Upon adding a custom configuration, a new node will appear labeled <strong>Guardrails</strong> that allow users modify essential guardrails for the newly defined category. </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can edit configurations on this modal. From a default configuration, you can save a proposal to be utilized. Deeper in the tree you will be saving a custom configuration.</p>
+<p>Newly defined categories will automatically utilize the Default Configuration settings and Guardrails. From a default configuration, you can save a proposal to be utilized, or edit a category to utilize a custom configuration with custom guardrails. </p>
 </div>
+<details class="example">
+<summary>Answer Generation Example</summary>
+<p>A category can be driven with an <strong>Answer Generation</strong> action. </p>
+<ol>
+<li>Click on the <strong>Add A Category</strong> node.</li>
+<li>Select <strong>Answer Generation</strong> as the action to take upon match.</li>
+<li>Add a relevant <strong>Category Name</strong> and a brief <strong>Category Description</strong>.</li>
+<li>Click <strong>Save Category</strong>. A new branch will appear in the Multi-Agent Routing tree. </li>
+</ol>
+<p><a class="glightbox" href="images/MAR_new_category.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MAR_new_category" src="images/MAR_new_category.png" /></a></p>
+<p>New categories will utilize the <strong>Default Configuration</strong> settings defined in the first node of the Multi-Agent Routing tree, also labled the <strong>Default Config</strong> node. </p>
+<p><a class="glightbox" href="images/MAR_new_category_default_config.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MAR_new_category_default_config" src="images/MAR_new_category_default_config.png" /></a></p>
+<p>To edit a <strong>Custom Configuration</strong> for the newly defined category:</p>
+<ol>
+<li>Click on the category node.</li>
+<li>Click <strong>Add Custom Configuration</strong></li>
+<li>The familiar NeuralSeek Configuration panel will pop up. Save your changes for your custom configuration and notice the category is now defined with a <strong>Custom Configuration</strong>. </li>
+</ol>
+<p><a class="glightbox" href="images/MAR_add_custmom_config.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MAR_add_custmom_config" src="images/MAR_add_custmom_config.png" /></a>
+<a class="glightbox" href="images/MAR_NS_config_panel.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MAR_NS_config_panel" src="images/MAR_NS_config_panel.png" /></a>
+<a class="glightbox" href="images/MAR_new_category_custom_config.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MAR_new_category_custom_config" src="images/MAR_new_category_custom_config.png" /></a></p>
+</details>
+<details class="example">
+<summary>mAIstro-led Example</summary>
+<p>A category can be driven with a <strong>mAIstro-led</strong> action.</p>
+<ol>
+<li>Click on the <strong>Add A Category</strong> node.</li>
+<li>Select <strong>mAIstro-led</strong> as the action to take upon match.</li>
+<li>Add a relevant <strong>Category Name</strong> and a brief <strong>Category Description</strong>.</li>
+<li>Click <strong>Save Category</strong>. A new branch will appear in the Multi-Agent Routing tree. </li>
+</ol>
+<p><a class="glightbox" href="images/MAR_new_maistro_led.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MAR_new_maistro_led" src="images/MAR_new_maistro_led.png" /></a></p>
+<p>New categories will utilize the <strong>Default Configuration</strong> settings defined in the first node of the Multi-Agent Routing tree, also labled the <strong>Default Config</strong> node. This configuration can be edited. </p>
+<p><a class="glightbox" href="images/MAR_new_maistro_config.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MAR_new_maistro_config" src="images/MAR_new_maistro_config.png" /></a></p>
+<p>Select your mAIstro agent by clicking <strong>Set Default Action</strong> and selecting from the drop-down menu. </p>
+<p><a class="glightbox" href="images/MAR_maistro_agent.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MAR_maistro_agent" src="images/MAR_maistro_agent.png" /></a></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For the mAIstro agent to appear in the drop-down menu, edit the mAIstro agent to begin with a <strong>Seek - In</strong> node. Save the agent with a unique name. </p>
+</div>
+</details>
+<h2 id="configuration_details">Configuration Details<a class="headerlink" href="#configuration_details" title="Permanent link"></a></h2>
+<p>This location of NeuralSeek is where users can edit the configurations for NeuralSeek’s features.</p>
 <h3 id="knowledgebase_connection">KnowledgeBase Connection<a class="headerlink" href="#knowledgebase_connection" title="Permanent link"></a></h3>
 <p>Users can change their KnowledgeBase type along with the associated URL, API keys, project ID, and other relevant information. Use the dropdown arrows to manually configure the fields of the schema in the connected KnowledgeBase.</p>
 <p><a class="glightbox" href="images/knowledgebase_connection_update.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="knowledgebase_connection" src="images/knowledgebase_connection_update.png" /></a></p>
@@ -3321,7 +3383,7 @@
 </div>
 <h2 id="guardrails">Guardrails<a class="headerlink" href="#guardrails" title="Permanent link"></a></h2>
 <p>Settings related to governance, prompt protection, profanity filtering, etc. have been separated into their own node when <strong>Multi-Agent Routing</strong> is enabled. </p>
-<p>Guardrails are available at every level of the tree with a custom configuration, and allow user better control of their category-based configurations.</p>
+<p>Guardrails are available at every level of the tree with a custom configuration, and allow users better control of their category-based configurations.</p>
 <h3 id="semantic_scoring">Semantic Scoring<a class="headerlink" href="#semantic_scoring" title="Permanent link"></a></h3>
 <p>Toggle the icons to enable or disable the Semantic Score Model, using Semantic Score as the basis for Warning &amp; Minimum confidence (e.g. Do NOT Enable for use cases requiring language translation), re-ranking the search results based on the Semantic Match, and checking the document titles and URL's as part of the Semantic Match. Note that semantic scoring will not be accurate when getting answers in a different language than your KnowledgeBase source docs.</p>
 <p><a class="glightbox" href="images/semantic_score.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="semantic_score" src="images/semantic_score.png" /></a></p>
