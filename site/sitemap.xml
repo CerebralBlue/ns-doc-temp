@@ -127,12 +127,6 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/features/table_understanding/"/>
     </url>
     <url>
-        <loc>https://documentation.neuralseek.com/guides/</loc>
-        <lastmod>2025-02-11</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/guides/"/>
-    </url>
-    <url>
         <loc>https://documentation.neuralseek.com/guides/data/dynamic_filters/</loc>
         <lastmod>2025-02-11</lastmod>
         <changefreq>daily</changefreq>
