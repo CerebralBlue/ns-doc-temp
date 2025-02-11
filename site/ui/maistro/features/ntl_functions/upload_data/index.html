@@ -121,7 +121,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#upload_document" class="md-skip">
+        <a href="#use_document" class="md-skip">
           Skip to content
         </a>
       
@@ -848,6 +848,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#use_document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Document
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#upload_document" class="md-nav__link">
     <span class="md-ellipsis">
       Upload Document
@@ -857,9 +866,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ocr_an_image" class="md-nav__link">
+  <a href="#upload_ocr" class="md-nav__link">
     <span class="md-ellipsis">
-      OCR an Image
+      Upload &amp; OCR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete_document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete Document
     </span>
   </a>
   
@@ -2598,6 +2616,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#use_document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Document
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#upload_document" class="md-nav__link">
     <span class="md-ellipsis">
       Upload Document
@@ -2607,9 +2634,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ocr_an_image" class="md-nav__link">
+  <a href="#upload_ocr" class="md-nav__link">
     <span class="md-ellipsis">
-      OCR an Image
+      Upload &amp; OCR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete_document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete Document
     </span>
   </a>
   
@@ -2633,6 +2669,17 @@
 
   <h1>Upload Data</h1>
 
+<h4 id="use_document">Use Document<a class="headerlink" href="#use_document" title="Permanent link"></a></h4>
+<p>Uses a local document that has been uploaded by the user. For more information on uploading documents, consult the <strong>Upload Document</strong> tab further down this page.</p>
+<p>By clicking on the gear icon on the Use Document node, a dropdown menu will be provided that shows the names of all uploaded documents.</p>
+<p><a class="glightbox" href="../images/dropdown.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="dropdown" src="../images/dropdown.png" /></a></p>
+<div class="admonition example">
+<p class="admonition-title">Parameters</p>
+<ul>
+<li><strong>Name</strong>: The name of the file that will be used by the Agent.</li>
+</ul>
+</div>
+<hr />
 <h4 id="upload_document">Upload Document<a class="headerlink" href="#upload_document" title="Permanent link"></a></h4>
 <p>Uploading a document works in two steps. When you click the <code>Upload Document</code> button, you are presented with a file selector to select a local document for upload. Some supported files are .docx, .doc, .pdf, .txt, .csv, .json, and .xlsx.</p>
 <p>mAIstro will automatically run OCR processing if a PDF is uploaded, but returns no text contents.</p>
@@ -2654,13 +2701,13 @@
 </ul>
 </div>
 <hr />
-<h4 id="ocr_an_image">OCR an Image<a class="headerlink" href="#ocr_an_image" title="Permanent link"></a></h4>
+<h4 id="upload_ocr">Upload &amp; OCR<a class="headerlink" href="#upload_ocr" title="Permanent link"></a></h4>
 <p><strong>mAIstro’s</strong> OCR feature automatically processes image-based PDFs and images, converting them into searchable, editable text.</p>
-<p>OCR'ing a document works in two steps. When you click the <code>OCR an Image</code> button, you are presented with a file selector to select a local document for upload. Some supported files are .pdf, .png, .jpeg.</p>
+<p>OCR'ing a document works in two steps. When you click the <code>Upload &amp; OCR</code> button, you are presented with a file selector to select a local document for upload. Some supported files are .pdf, .png, .jpeg.</p>
 <p>After the document is successfully uploaded, it is available in the <code>Upload Document</code> pane:</p>
-<p><a class="glightbox" href="../images/screenshot_ocr.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ocr_screenshot" src="../images/screenshot_ocr.png" /></a></p>
+<p><a class="glightbox" href="../images/ocr-image.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ocr_screenshot" src="../images/ocr-image.png" /></a></p>
 <p>The uploaded document or image can then be used with the following syntax:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{{ doc|name:screenshot_2024-11-05.png }}
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{{ doc|name:resume.pdf }}
 </span></code></pre></div>
 <div class="admonition example">
 <p class="admonition-title">Parameters</p>
@@ -2681,7 +2728,7 @@
 <p>Go to <strong>Upload Data</strong> in mAIstro.</p>
 </li>
 <li>
-<p>Select <strong>Upload Document</strong> or <strong>OCR an Image</strong> and choose your PDF file.</p>
+<p>Select <strong>Upload Document</strong> or <strong>Upload &amp; OCR</strong> and choose your PDF file.</p>
 </li>
 <li>
 <p>OCR will be automatically applied, transforming the document into searchable text.</p>
@@ -2703,7 +2750,7 @@
 <p>Go to <strong>Upload Data</strong> in mAIstro.</p>
 </li>
 <li>
-<p>Select <strong>OCR an Image</strong> to upload an image file.</p>
+<p>Select <strong>Upload &amp; OCR</strong> to upload an image file.</p>
 </li>
 <li>
 <p>OCR processing starts automatically, converting the image into searchable text.</p>
@@ -2718,6 +2765,23 @@
 <p>This example returns a text-rich version of <code>image.png</code>, optimized for data extraction and analysis.</p>
 </div>
 </details>
+<hr />
+<h4 id="delete_document">Delete Document<a class="headerlink" href="#delete_document" title="Permanent link"></a></h4>
+<p>Deletes a local file. After deleting a local document, it will need to be manually reuploaded by the user before it can be used again.</p>
+<p>You can also manually delete a local document by pressing the minus button next to an uploaded document's name in the <strong>Upload Data</strong> functions folder.</p>
+<p><a class="glightbox" href="../images/deletion.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="deletion" src="../images/deletion.png" /></a></p>
+<div class="admonition example">
+<p class="admonition-title">Parameters</p>
+<ul>
+<li><strong>Name</strong>: The name of the local file to be deleted.</li>
+</ul>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Returns</p>
+<ul>
+<li>The document will be deleted from the list of uploaded documents and can no longer be used.</li>
+</ul>
+</div>
 
 
 
