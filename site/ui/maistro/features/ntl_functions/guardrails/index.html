@@ -1006,6 +1006,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#identify_pii" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identify PII
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2667,6 +2676,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#identify_pii" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identify PII
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2762,6 +2780,28 @@
 <p class="admonition-title">Note</p>
 <p>You may define additional PII, or disable specific builtin PII filters, on the Configure tab under Guardrails</p>
 </div>
+<hr />
+<h4 id="identify_pii">Identify PII<a class="headerlink" href="#identify_pii" title="Permanent link"></a></h4>
+<p>Find PII via the built-in NeuralSeek and custom added REGEX patterns.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>{{ regexPII  }}
+</span></code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Parameters</p>
+<p>None - Data should be "chained" into this function.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Returns</p>
+<p>The identified PII text.</p>
+</div>
+<details class="note">
+<summary>Example Usage</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>howardyoo@mail.com Howard Yoo Dog Cat Person
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>{{ regexPII  }}
+</span></code></pre></div>
+<p>Will output:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>howardyoo@mail.com
+</span></code></pre></div>
+</details>
 
 
 
