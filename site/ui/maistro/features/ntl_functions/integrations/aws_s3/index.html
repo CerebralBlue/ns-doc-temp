@@ -8,25 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://documentation.neuralseek.com/ui/maistro/features/ntl_functions/modify_data/string_tools/">
+        <link rel="canonical" href="https://documentation.neuralseek.com/ui/maistro/features/ntl_functions/integrations/aws_s3/">
       
       
-        <link rel="prev" href="../json_tools/">
+        <link rel="prev" href="../../send_data/">
       
       
-        <link rel="next" href="../transform/">
+        <link rel="next" href="../databases/">
       
       
       <link rel="icon" href="../../../../../../assets/ns-new.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
     
     
       
-        <title>String Toolbox - NeuralSeek Documentation</title>
+        <title>AWS S3 - NeuralSeek Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
         <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.06af60db.min.css">
@@ -69,11 +69,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="String Toolbox - NeuralSeek Documentation" >
+        <meta  property="og:title"  content="AWS S3 - NeuralSeek Documentation" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://documentation.neuralseek.com/assets/images/social/ui/maistro/features/ntl_functions/modify_data/string_tools.png" >
+        <meta  property="og:image"  content="https://documentation.neuralseek.com/assets/images/social/ui/maistro/features/ntl_functions/integrations/aws_s3.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -81,15 +81,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://documentation.neuralseek.com/ui/maistro/features/ntl_functions/modify_data/string_tools/" >
+        <meta  property="og:url"  content="https://documentation.neuralseek.com/ui/maistro/features/ntl_functions/integrations/aws_s3/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="String Toolbox - NeuralSeek Documentation" >
+        <meta  name="twitter:title"  content="AWS S3 - NeuralSeek Documentation" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://documentation.neuralseek.com/assets/images/social/ui/maistro/features/ntl_functions/modify_data/string_tools.png" >
+        <meta  name="twitter:image"  content="https://documentation.neuralseek.com/assets/images/social/ui/maistro/features/ntl_functions/integrations/aws_s3.png" >
       
     
     
@@ -121,7 +121,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uppercase" class="md-skip">
+        <a href="#aws_s3" class="md-skip">
           Skip to content
         </a>
       
@@ -156,7 +156,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              String Toolbox
+              AWS S3
             
           </span>
         </div>
@@ -894,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agent_registry/" class="md-nav__link">
+      <a href="../../multi-agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1023,10 +1023,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -1043,11 +1041,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_2_12" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_2_12" >
         
           
           <label class="md-nav__link" for="__nav_2_7_2_12" id="__nav_2_7_2_12_label" tabindex="0">
@@ -1062,7 +1060,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_7_2_12_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_7_2_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_7_2_12">
             <span class="md-nav__icon md-icon"></span>
             Modify Data
@@ -1076,7 +1074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../code_tools/" class="md-nav__link">
+      <a href="../../modify_data/code_toolbox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1098,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../json_tools/" class="md-nav__link">
+      <a href="../../modify_data/json_toolbox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1117,29 +1115,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    String Toolbox
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../modify_data/string_toolbox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1149,114 +1128,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#uppercase" class="md-nav__link">
-    <span class="md-ellipsis">
-      UPPERCASE
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lowercase" class="md-nav__link">
-    <span class="md-ellipsis">
-      lowercase
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#base64_encode" class="md-nav__link">
-    <span class="md-ellipsis">
-      Base64 Encode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#base64_decode" class="md-nav__link">
-    <span class="md-ellipsis">
-      Base64 Decode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#url_encode" class="md-nav__link">
-    <span class="md-ellipsis">
-      URL Encode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#url_decode" class="md-nav__link">
-    <span class="md-ellipsis">
-      URL Decode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#split_extract_section" class="md-nav__link">
-    <span class="md-ellipsis">
-      Split (extract section)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#split_on_delimiter" class="md-nav__link">
-    <span class="md-ellipsis">
-      Split (on delimiter)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#regular_expression" class="md-nav__link">
-    <span class="md-ellipsis">
-      Regular Expression
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#escape_a_string" class="md-nav__link">
-    <span class="md-ellipsis">
-      Escape a String
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1269,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../transform/" class="md-nav__link">
+      <a href="../../modify_data/transform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1291,7 +1162,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../xml_tools/" class="md-nav__link">
+      <a href="../../modify_data/xml_toolbox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1340,11 +1211,47 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../database_connections/" class="md-nav__link">
+  
+    
+    
+      
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_2_14" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_7_2_14" id="__nav_2_7_2_14_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Integrations
@@ -1352,7 +1259,320 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_7_2_14_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_7_2_14">
+            <span class="md-nav__icon md-icon"></span>
+            Integrations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    AWS S3
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    AWS S3
+    
+  </span>
+  
+
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#s3_read_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3 Read File
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3_write_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3 Write File
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../databases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Databases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Github
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../google_drive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Google Drive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jira/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jira
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../knowledgebases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KnowledgeBases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sharepoint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sharepoint
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Slack
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trello/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trello
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../watsonx.governance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    watsonx.governance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../web_searches/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web Searches
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -2722,6 +2942,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2730,90 +2952,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#uppercase" class="md-nav__link">
+  <a href="#s3_read_file" class="md-nav__link">
     <span class="md-ellipsis">
-      UPPERCASE
+      S3 Read File
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#lowercase" class="md-nav__link">
+  <a href="#s3_write_file" class="md-nav__link">
     <span class="md-ellipsis">
-      lowercase
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#base64_encode" class="md-nav__link">
-    <span class="md-ellipsis">
-      Base64 Encode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#base64_decode" class="md-nav__link">
-    <span class="md-ellipsis">
-      Base64 Decode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#url_encode" class="md-nav__link">
-    <span class="md-ellipsis">
-      URL Encode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#url_decode" class="md-nav__link">
-    <span class="md-ellipsis">
-      URL Decode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#split_extract_section" class="md-nav__link">
-    <span class="md-ellipsis">
-      Split (extract section)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#split_on_delimiter" class="md-nav__link">
-    <span class="md-ellipsis">
-      Split (on delimiter)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#regular_expression" class="md-nav__link">
-    <span class="md-ellipsis">
-      Regular Expression
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#escape_a_string" class="md-nav__link">
-    <span class="md-ellipsis">
-      Escape a String
+      S3 Write File
     </span>
   </a>
   
@@ -2835,266 +2985,55 @@
 
 
 
-  <h1>String Toolbox</h1>
-
-<h4 id="uppercase">UPPERCASE<a class="headerlink" href="#uppercase" title="Permanent link"></a></h4>
-<p>Convert a string to uppercase characters.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{{ uppercase  }}
-</span></code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Parameters</p>
-<p>None - Data should be "chained" into this function.</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<p>The string converted into all uppercase.</p>
-</div>
-<details class="note">
-<summary>Example Usage</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>The Quick Brown Fox Jumps Over The Lazy Dog
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>{{ uppercase  }}
-</span></code></pre></div>
-<p>Would yield:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
-</span></code></pre></div>
-</details>
-<hr />
-<h4 id="lowercase">lowercase<a class="headerlink" href="#lowercase" title="Permanent link"></a></h4>
-<p>Convert a string to lowercase characters.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>{{ lowercase }}
-</span></code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Parameters</p>
-<p>None - Data should be "chained" into this function.</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<p>The string converted into all lowercase.</p>
-</div>
-<details class="note">
-<summary>Example Usage</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>The Quick Brown Fox Jumps Over The Lazy Dog
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>{{ lowercase  }}
-</span></code></pre></div>
-<p>Would yield:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>the quick brown fox jumps over the lazy dog
-</span></code></pre></div>
-</details>
-<hr />
-<h4 id="base64_encode">Base64 Encode<a class="headerlink" href="#base64_encode" title="Permanent link"></a></h4>
-<p>Encode a string to Base64.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>{{ b64encode }}
-</span></code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Parameters</p>
-<p>None - Data should be "chained" into this function.</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<p>The string converted into Base64.</p>
-</div>
-<details class="note">
-<summary>Example Usage</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>The Quick Brown Fox Jumps Over The Lazy Dog
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>{{ b64encode  }}
-</span></code></pre></div>
-<p>Would yield:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>VGhlIFF1aWNrIEJyb3duIEZveCBKdW1wcyBPdmVyIFRoZSBMYXp5IERvZwo=
-</span></code></pre></div>
-</details>
-<hr />
-<h4 id="base64_decode">Base64 Decode<a class="headerlink" href="#base64_decode" title="Permanent link"></a></h4>
-<p>Decode a string from Base64.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>{{ b64decode }}
-</span></code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Parameters</p>
-<p>None - Data should be "chained" into this function.</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<p>The Base64 string converted into "normal" text.</p>
-</div>
-<details class="note">
-<summary>Example Usage</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>VGhlIFF1aWNrIEJyb3duIEZveCBKdW1wcyBPdmVyIFRoZSBMYXp5IERvZwo=
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>{{ b64decode  }}
-</span></code></pre></div>
-<p>Would yield:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>The Quick Brown Fox Jumps Over The Lazy Dog
-</span></code></pre></div>
-</details>
-<hr />
-<h4 id="url_encode">URL Encode<a class="headerlink" href="#url_encode" title="Permanent link"></a></h4>
-<p>URL Encode a string (helpful when working with APIs).</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>{{ urlencode }}
-</span></code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Parameters</p>
-<p>None - Data should be "chained" into this function.</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<p>The string converted into a URL encode.</p>
-</div>
-<details class="note">
-<summary>Example Usage</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>The Quick Brown Fox Jumps Over The Lazy Dog
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>{{ urlencode  }}
-</span></code></pre></div>
-<p>Would yield:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>The%20Quick%20Brown%20Fox%20Jumps%20Over%20The%20Lazy%20Dog%0A
-</span></code></pre></div>
-</details>
-<hr />
-<h4 id="url_decode">URL Decode<a class="headerlink" href="#url_decode" title="Permanent link"></a></h4>
-<p>URL decodes a string.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>{{ urldecode }}
-</span></code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Parameters</p>
-<p>None - Data should be "chained" into this function.</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<p>The string converted into a URL decode.</p>
-</div>
-<details class="note">
-<summary>Example Usage</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>The%20Quick%20Brown%20Fox%20Jumps%20Over%20The%20Lazy%20Dog%0A
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>{{ urldecode }}
-</span></code></pre></div>
-<p>Would yield:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>The Quick Brown Fox Jumps Over The Lazy Dog
-</span></code></pre></div>
-</details>
-<hr />
-<h4 id="split_extract_section">Split (extract section)<a class="headerlink" href="#split_extract_section" title="Permanent link"></a></h4>
-<p>Extracts a section from a text or document.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>{{ split  | start: &quot;&quot; | end: &quot;&quot; | removeHeaders: &quot;true&quot; }}
-</span></code></pre></div>
+<h1 id="aws_s3">AWS S3<a class="headerlink" href="#aws_s3" title="Permanent link"></a></h1>
+<h4 id="s3_read_file">S3 Read File<a class="headerlink" href="#s3_read_file" title="Permanent link"></a></h4>
+<p>Connect to AWS s3 and read a file</p>
 <div class="admonition example">
 <p class="admonition-title">Parameters</p>
 <ul>
 <li>
-<p><strong>Start</strong>: Match string to begin the split. Included in the result. Case-sensitive.</p>
+<p><strong>key</strong>: The filename in S3 to read</p>
 </li>
 <li>
-<p><strong>End</strong>: The match string to end the split. Excluded from the result. Case-sensitive.</p>
+<p><strong>bucket</strong>: The bucket name</p>
 </li>
 <li>
-<p><strong>Remove Headers</strong>: If true, remove repeating lines of text (e.g. headers or footers). If false, do not remove repeating text.</p>
+<p><strong>region</strong>: the AWS region</p>
+</li>
+<li>
+<p><strong>accessKeyId</strong>: Your IAM access key Id</p>
+</li>
+<li>
+<p><strong>secretAccessKey</strong>: Your Secret access key</p>
 </li>
 </ul>
 </div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<p>The resulting split chunk of text.</p>
-</div>
-<details class="note">
-<summary>Example Usage</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>I have 20 cats and 40 dogs.
-</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>{{ split | start: &quot;20&quot; | end: &quot;40&quot; | removeHeaders: false }}
-</span></code></pre></div>
-<p>Would yield:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>20 cats and
-</span></code></pre></div>
-</details>
 <hr />
-<h4 id="split_on_delimiter">Split (on delimiter)<a class="headerlink" href="#split_on_delimiter" title="Permanent link"></a></h4>
-<p>Split a string on the specified delimiter, and store it in the variable name you choose for later use (eg, take a list of comma-separated names, and run a loop with each value).</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>{{ splitDelim  | delimiter: &quot;,&quot; | outputJson: &quot;&quot; | variable: &quot;&quot; }}
-</span></code></pre></div>
+<h4 id="s3_write_file">S3 Write File<a class="headerlink" href="#s3_write_file" title="Permanent link"></a></h4>
+<p>Connect to AWS s3 and write a file</p>
 <div class="admonition example">
 <p class="admonition-title">Parameters</p>
 <ul>
-<li><strong>Delimiter</strong>: The delimiting string or regex on which to split the input text.</li>
-<li><strong>Output Json</strong>: If true, outputs the split result as a JSON array. Otherwise, this sets the mAIstro variables for the resulting split.</li>
-<li><strong>Variable</strong>: The base variable name to use for the array.</li>
+<li>
+<p><strong>data</strong>: The data to write</p>
+</li>
+<li>
+<p><strong>key</strong>: The filename in S3 to read</p>
+</li>
+<li>
+<p><strong>bucket</strong>: The bucket name</p>
+</li>
+<li>
+<p><strong>region</strong>: the AWS region</p>
+</li>
+<li>
+<p><strong>accessKeyId</strong>: Your IAM access key Id</p>
+</li>
+<li>
+<p><strong>secretAccessKey</strong>: Your Secret access key</p>
+</li>
 </ul>
 </div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<p>If Output Json is set to true, returns an array split based on your delimiter.</p>
-</div>
-<details class="note">
-<summary>Example Usage</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>I have 20 cats and 40 dogs.
-</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>{{ splitDelim  | delimiter: &quot;cats&quot; | outputJson: &quot;true&quot; | variable: &quot;&quot; }}
-</span></code></pre></div>
-<p>Would yield:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>[&quot;I have 20 &quot;,&quot; and 40 dogs.\n&quot;]
-</span></code></pre></div>
-</details>
-<hr />
-<h4 id="regular_expression">Regular Expression<a class="headerlink" href="#regular_expression" title="Permanent link"></a></h4>
-<p>Performs regular expression on input data. Regular expression can be a powerful feature to extract or replace certain data.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>{{ regex  | match: &quot;&quot; | replace: &quot;&quot; | group: &quot;&quot; }}
-</span></code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Parameters</p>
-<ul>
-<li><strong>Match</strong>: The match regex to use. E.g. <code>/[^0-9A-Za-z\s]/g</code></li>
-<li><strong>Replace</strong>: The string to substitute for matches.</li>
-<li><strong>Group</strong>: The group to extract. This is useful when multiple strings match the regex defined in the Match parameter, and you are only looking for one specific string.</li>
-</ul>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<p>The replaced text, or in case of using the <code>group</code> parameter, the group match.</p>
-</div>
-<details class="note">
-<summary>Example Usage 1</summary>
-<p>If you have a text that you need to replace with something else, you can use the following expression:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>my name is howardyoo
-</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>{{ regex  | match: &quot;yoo&quot; | replace: &quot;yu&quot; }}
-</span></code></pre></div>
-<p>Which yields:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>my name is howardyu
-</span></code></pre></div>
-</details>
-<details class="note">
-<summary>Example Usage 2</summary>
-<p>Regex also supports extraction. For example, if you want to extract the email address in a text message, you can do so:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>my name is howardyoo@email.com
-</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>{{ regex | match: &quot;[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}&quot; | group: &quot;0&quot; }}
-</span></code></pre></div>
-<p>This will extract the email address (group 0). The result is:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>howardyoo@email.com
-</span></code></pre></div>
-</details>
-<details class="note">
-<summary>Example Usage 3</summary>
-<p>Regex also supports groups, so in case you want to get the last digits of a phone number, you can do so:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>my phone number is 213-292-3322
-</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>{{ regex  | match: &quot;([0-9]+)-([0-9]+)-([0-9]+)&quot; | group: &quot;3&quot; }}
-</span></code></pre></div>
-<p>which will result in:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>3322
-</span></code></pre></div></p>
-</details>
-<hr />
-<h4 id="escape_a_string">Escape a String<a class="headerlink" href="#escape_a_string" title="Permanent link"></a></h4>
-<p>Escapes a string for use within a JSON object.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>{{ jsonEscape  }}
-</span></code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Parameters</p>
-<p>None - Data should be "chained" into this function.</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<p>Escapes a string by inserting backslashes next to special characters, in order to overcome programming limitations.</p>
-</div>
-<details class="note">
-<summary>Example Usage</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>&quot;I saw my mother today, and I told her &quot;I have 20 cats and 40 dogs&quot;.&quot;
-</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>{{ jsonEscape  }}
-</span></code></pre></div>
-<p>Would yield:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>\&quot;I saw my mother today, and I told her \&quot;I have 20 cats and 40 dogs\&quot;.\&quot;\n
-</span></code></pre></div>
-</details>
 
 
 
@@ -3161,7 +3100,7 @@
     <script id="__config" type="application/json">{"base": "../../../../../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "toc.follow", "content.code.copy"], "search": "../../../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
         <script src="../../../../../../js/watson.js"></script>
       

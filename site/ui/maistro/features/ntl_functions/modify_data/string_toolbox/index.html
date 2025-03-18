@@ -8,25 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://documentation.neuralseek.com/ui/maistro/features/ntl_functions/modify_data/json_tools/">
+        <link rel="canonical" href="https://documentation.neuralseek.com/ui/maistro/features/ntl_functions/modify_data/string_toolbox/">
       
       
-        <link rel="prev" href="../code_tools/">
+        <link rel="prev" href="../json_toolbox/">
       
       
-        <link rel="next" href="../string_tools/">
+        <link rel="next" href="../transform/">
       
       
       <link rel="icon" href="../../../../../../assets/ns-new.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
     
     
       
-        <title>JSON Toolbox - NeuralSeek Documentation</title>
+        <title>String Toolbox - NeuralSeek Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
         <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.06af60db.min.css">
@@ -69,11 +69,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="JSON Toolbox - NeuralSeek Documentation" >
+        <meta  property="og:title"  content="String Toolbox - NeuralSeek Documentation" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://documentation.neuralseek.com/assets/images/social/ui/maistro/features/ntl_functions/modify_data/json_tools.png" >
+        <meta  property="og:image"  content="https://documentation.neuralseek.com/assets/images/social/ui/maistro/features/ntl_functions/modify_data/string_toolbox.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -81,15 +81,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://documentation.neuralseek.com/ui/maistro/features/ntl_functions/modify_data/json_tools/" >
+        <meta  property="og:url"  content="https://documentation.neuralseek.com/ui/maistro/features/ntl_functions/modify_data/string_toolbox/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="JSON Toolbox - NeuralSeek Documentation" >
+        <meta  name="twitter:title"  content="String Toolbox - NeuralSeek Documentation" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://documentation.neuralseek.com/assets/images/social/ui/maistro/features/ntl_functions/modify_data/json_tools.png" >
+        <meta  name="twitter:image"  content="https://documentation.neuralseek.com/assets/images/social/ui/maistro/features/ntl_functions/modify_data/string_toolbox.png" >
       
     
     
@@ -121,7 +121,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#json_tools" class="md-skip">
+        <a href="#string_toolbox" class="md-skip">
           Skip to content
         </a>
       
@@ -156,7 +156,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              JSON Toolbox
+              String Toolbox
             
           </span>
         </div>
@@ -894,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agent_registry/" class="md-nav__link">
+      <a href="../../multi-agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1076,11 +1076,33 @@
   
   
     <li class="md-nav__item">
-      <a href="../code_tools/" class="md-nav__link">
+      <a href="../code_toolbox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Code Toolbox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../json_toolbox/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON Toolbox
     
   </span>
   
@@ -1104,12 +1126,14 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    JSON Toolbox
+    String Toolbox
     
   </span>
   
@@ -1121,7 +1145,7 @@
         
   
   <span class="md-ellipsis">
-    JSON Toolbox
+    String Toolbox
     
   </span>
   
@@ -1134,6 +1158,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1142,54 +1168,81 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#json_tools" class="md-nav__link">
+  <a href="#uppercase" class="md-nav__link">
     <span class="md-ellipsis">
-      JSON Tools
+      UPPERCASE
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#remap_json" class="md-nav__link">
+  <a href="#lowercase" class="md-nav__link">
     <span class="md-ellipsis">
-      ReMap JSON
+      lowercase
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#json_array_filter" class="md-nav__link">
+  <a href="#base64_encode" class="md-nav__link">
     <span class="md-ellipsis">
-      JSON Array Filter
+      Base64 Encode
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#json_key_filter" class="md-nav__link">
+  <a href="#base64_decode" class="md-nav__link">
     <span class="md-ellipsis">
-      JSON Key Filter
+      Base64 Decode
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#json_to_variables" class="md-nav__link">
+  <a href="#url_encode" class="md-nav__link">
     <span class="md-ellipsis">
-      JSON to Variables
+      URL Encode
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#variables_to_json" class="md-nav__link">
+  <a href="#url_decode" class="md-nav__link">
     <span class="md-ellipsis">
-      Variables to JSON
+      URL Decode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#split_extract_section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Split (extract section)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#split_on_delimiter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Split (on delimiter)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regular_expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regular Expression
     </span>
   </a>
   
@@ -1208,28 +1261,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../string_tools/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    String Toolbox
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1264,7 +1295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../xml_tools/" class="md-nav__link">
+      <a href="../xml_toolbox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1315,9 +1346,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../database_connections/" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_2_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7_2_14" id="__nav_2_7_2_14_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Integrations
@@ -1325,7 +1390,261 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_7_2_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7_2_14">
+            <span class="md-nav__icon md-icon"></span>
+            Integrations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/aws_s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS S3
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/databases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Databases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/github/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Github
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/google_drive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Google Drive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/jira/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jira
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/knowledgebases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KnowledgeBases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/sharepoint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sharepoint
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/slack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Slack
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/trello/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trello
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/watsonx.governance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    watsonx.governance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/web_searches/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web Searches
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -2695,6 +3014,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2703,54 +3024,81 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#json_tools" class="md-nav__link">
+  <a href="#uppercase" class="md-nav__link">
     <span class="md-ellipsis">
-      JSON Tools
+      UPPERCASE
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#remap_json" class="md-nav__link">
+  <a href="#lowercase" class="md-nav__link">
     <span class="md-ellipsis">
-      ReMap JSON
+      lowercase
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#json_array_filter" class="md-nav__link">
+  <a href="#base64_encode" class="md-nav__link">
     <span class="md-ellipsis">
-      JSON Array Filter
+      Base64 Encode
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#json_key_filter" class="md-nav__link">
+  <a href="#base64_decode" class="md-nav__link">
     <span class="md-ellipsis">
-      JSON Key Filter
+      Base64 Decode
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#json_to_variables" class="md-nav__link">
+  <a href="#url_encode" class="md-nav__link">
     <span class="md-ellipsis">
-      JSON to Variables
+      URL Encode
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#variables_to_json" class="md-nav__link">
+  <a href="#url_decode" class="md-nav__link">
     <span class="md-ellipsis">
-      Variables to JSON
+      URL Decode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#split_extract_section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Split (extract section)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#split_on_delimiter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Split (on delimiter)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regular_expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regular Expression
     </span>
   </a>
   
@@ -2781,285 +3129,198 @@
 
 
 
-  <h1>JSON Toolbox</h1>
-
-<h4 id="json_tools">JSON Tools<a class="headerlink" href="#json_tools" title="Permanent link"></a></h4>
-<p>Cleanse and filter JSON for later use.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{{ jsonTools  | filter: &quot;value&quot; | filterType: &quot;&quot; }}
+<h1 id="string_toolbox">String Toolbox<a class="headerlink" href="#string_toolbox" title="Permanent link"></a></h1>
+<h4 id="uppercase">UPPERCASE<a class="headerlink" href="#uppercase" title="Permanent link"></a></h4>
+<p>Convert a string to UPPERCASE.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{{ uppercase  }}
 </span></code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Parameters</p>
-<ul>
-<li><strong>Filter</strong>: A <em>value</em> for which we should filter items. </li>
-<li><strong>Filter Type</strong>: If set to <code>Equals</code>, filter for objects/keys where the value equals the value set in <code>filter</code>. If set to <code>Not Equals</code>, filter for objects/keys where the value does not equal the value set in <code>filter</code>.</li>
-</ul>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<ul>
-<li>The resulting JSON.</li>
-</ul>
-</div>
 <details class="note">
 <summary>Example Usage</summary>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="err"> </span><span class="w"> </span><span class="nt">&quot;books&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">{</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby&quot;</span><span class="p">,</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;summary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby is a novel by F. Scott Fitzgerald that follows the story of Jay Gatsby, a wealthy and mysterious man, and his pursuit of the American Dream. Set in the 1920s, the book explores themes of love, wealth, and the corruption of the American Dream.&quot;</span><span class="p">,</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;F. Scott Fitzgerald&quot;</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">}</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">]</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">}</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">{{</span><span class="w"> </span><span class="err">jso</span><span class="kc">n</span><span class="err">Tools</span><span class="w"> </span><span class="err"> |</span><span class="w"> </span><span class="kc">f</span><span class="err">il</span><span class="kc">ter</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby&quot;</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="kc">f</span><span class="err">il</span><span class="kc">ter</span><span class="err">Type</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Equals&quot;</span><span class="w"> </span><span class="p">}}</span>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>The Quick Brown Fox Jumps Over The Lazy Dog
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>{{ uppercase  }}
 </span></code></pre></div>
-<p>Would yield:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="err"> </span><span class="w"> </span><span class="nt">&quot;books&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">{</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby&quot;</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">}</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">]</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>Where setting <code>filterType</code> to <code>Not Equals</code> would yield:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="err"> </span><span class="w"> </span><span class="nt">&quot;books&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">{</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;summary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby is a novel by F. Scott Fitzgerald that follows the story of Jay Gatsby, a wealthy and mysterious man, and his pursuit of the American Dream. Set in the 1920s, the book explores themes of love, wealth, and the corruption of the American Dream.&quot;</span><span class="p">,</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;F. Scott Fitzgerald&quot;</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">}</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">]</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">}</span>
-</span></code></pre></div>
+Would yield:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
+</span></code></pre></div></p>
 </details>
 <hr />
-<h4 id="remap_json">ReMap JSON<a class="headerlink" href="#remap_json" title="Permanent link"></a></h4>
-<p>Remap elements in a JSON object from one key name to another.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>{{ reMapJSON  | match: &quot;&quot; | replace: &quot;&quot; }}
+<h4 id="lowercase">lowercase<a class="headerlink" href="#lowercase" title="Permanent link"></a></h4>
+<p>Convert a string to lowercase.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>{{ lowercase }}
 </span></code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Parameters</p>
-<ul>
-<li><strong>Match</strong>: A variable that you are aiming to replace.</li>
-<li><strong>Replace</strong>: The variable that will replace all instances of the variable set as your Match parameter.</li>
-</ul>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<ul>
-<li>Changes the key name of a variable to the name used in the Replace parameter.</li>
-</ul>
-</div>
 <details class="note">
 <summary>Example Usage</summary>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="err"> </span><span class="w"> </span><span class="nt">&quot;books&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">{</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby&quot;</span><span class="p">,</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;summary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby is a novel by F. Scott Fitzgerald that follows the story of Jay Gatsby, a wealthy and mysterious man, and his pursuit of the American Dream. Set in the 1920s, the book explores themes of love, wealth, and the corruption of the American Dream.&quot;</span><span class="p">,</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;F. Scott Fitzgerald&quot;</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">}</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="p">]</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="p">}</span>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="p">{{</span><span class="w"> </span><span class="err">reMapJSON</span><span class="w"> </span><span class="err"> |</span><span class="w"> </span><span class="err">ma</span><span class="kc">t</span><span class="err">ch</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby&quot;</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">replace</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;To Kill a Mockingbird&quot;</span><span class="w"> </span><span class="p">}}</span>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>The Quick Brown Fox Jumps Over The Lazy Dog
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>{{ lowercase  }}
 </span></code></pre></div>
-<p>Would yield:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="err"> </span><span class="w"> </span><span class="nt">&quot;books&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">{</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;To Kill a Mockingbird&quot;</span><span class="p">,</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;summary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby is a novel by F. Scott Fitzgerald that follows the story of Jay Gatsby, a wealthy and mysterious man, and his pursuit of the American Dream. Set in the 1920s, the book explores themes of love, wealth, and the corruption of the American Dream.&quot;</span><span class="p">,</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;F. Scott Fitzgerald&quot;</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="p">}</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="p">]</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="p">}</span>
-</span></code></pre></div>
+Would yield:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>the quick brown fox jumps over the lazy dog
+</span></code></pre></div></p>
 </details>
 <hr />
-<h4 id="json_array_filter">JSON Array Filter<a class="headerlink" href="#json_array_filter" title="Permanent link"></a></h4>
-<p>Filter a JSON array</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>{{ arrayFilter  | filter: &quot;&quot; | filterType: &quot;&quot; }}
+<h4 id="base64_encode">Base64 Encode<a class="headerlink" href="#base64_encode" title="Permanent link"></a></h4>
+<p>Take input text and encode it to Base64 encoding.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>{{ b64encode }}
 </span></code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Parameters</p>
-<ul>
-<li><strong>Filter</strong>: A <em>value</em> for which we should filter items.</li>
-<li><strong>Filter Type</strong>: There are four different index types:</li>
-</ul>
-<ol>
-<li>
-<p>Index: You can use a filterType of "Index" and pass the numerical index of the array to return.</p>
-</li>
-<li>
-<p>IndexRange: IndexRange expects number-number of indexes to extract, E.G.: 1-3.</p>
-</li>
-<li>
-<p>Value Match: Value match and value Contains will filter the array by finding objects in the array with properties that match the filter value.</p>
-</li>
-<li>
-<p>Value Contains: Value match and value Contains will filter the array by finding objects in the array with properties that match the filter value.</p>
-</li>
-</ol>
-</div>
-<hr />
-<h4 id="json_key_filter">JSON Key Filter<a class="headerlink" href="#json_key_filter" title="Permanent link"></a></h4>
-<p>Filter a JSON Object by a list of keys.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>{{ keyFilter  | filter: &quot;&quot; }}
-</span></code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Parameters</p>
-<ul>
-<li>Filter: A comma-separated list of keys to filter a JSON object by.</li>
-</ul>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<ul>
-<li>The JSON object, filtered by the keys inputted in the parameters.</li>
-</ul>
-</div>
 <details class="note">
 <summary>Example Usage</summary>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby&quot;</span><span class="p">,</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;summary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby is a novel by F. Scott Fitzgerald that follows the story of Jay Gatsby, a wealthy and mysterious man, and his pursuit of the American Dream. Set in the 1920s, the book explores themes of love, wealth, and the corruption of the American Dream.&quot;</span><span class="p">,</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;F. Scott Fitzgerald&quot;</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="p">}</span>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="p">{{</span><span class="w"> </span><span class="err">keyFil</span><span class="kc">ter</span><span class="w">  </span><span class="err">|</span><span class="w"> </span><span class="kc">f</span><span class="err">il</span><span class="kc">ter</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;title, author&quot;</span><span class="w"> </span><span class="p">}}</span>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>The Quick Brown Fox Jumps Over The Lazy Dog
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>{{ b64encode  }}
 </span></code></pre></div>
-<p>Would yield:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>{&quot;title&quot;:&quot;The Great Gatsby&quot;,&quot;author&quot;:&quot;F. Scott Fitzgerald&quot;}
-</span></code></pre></div>
+Would yield:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>VGhlIFF1aWNrIEJyb3duIEZveCBKdW1wcyBPdmVyIFRoZSBMYXp5IERvZwo=
+</span></code></pre></div></p>
 </details>
 <hr />
-<h4 id="json_to_variables">JSON to Variables<a class="headerlink" href="#json_to_variables" title="Permanent link"></a></h4>
-<p>Accepts JSON as an input, flattens the object keys, and sets those keys as variables in mAIstro's context.</p>
-<div class="admonition example">
-<p class="admonition-title">Parameters</p>
-<p>None - Data should be "chained" into this function.</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<p>None - Variables are assigned as a result of this function.</p>
-</div>
+<h4 id="base64_decode">Base64 Decode<a class="headerlink" href="#base64_decode" title="Permanent link"></a></h4>
+<p>Take input text and decode it from Base64 encoding.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>{{ b64decode }}
+</span></code></pre></div>
 <details class="note">
 <summary>Example Usage</summary>
-<p>Data can come from a LLM, a file, REST API response, etc</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>{{ LLM  | prompt: &quot;Output some information about a book in JSON format. Include title, summary, and author.&quot; | modelCard: &quot;&quot; }}=&gt;{{ jsonToVars }}
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>VGhlIFF1aWNrIEJyb3duIEZveCBKdW1wcyBPdmVyIFRoZSBMYXp5IERvZwo=
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>{{ b64decode  }}
 </span></code></pre></div>
-<p>The output from the LLM:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">{</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="err"> </span><span class="w"> </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby&quot;</span><span class="p">,</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="err"> </span><span class="w"> </span><span class="nt">&quot;summary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby is a novel by F. Scott Fitzgerald that follows the story of Jay Gatsby, a wealthy and mysterious man, and his pursuit of the American Dream. Set in the 1920s, the book explores themes of love, wealth, and the corruption of the American Dream.&quot;</span><span class="p">,</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="err"> </span><span class="w"> </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;F. Scott Fitzgerald&quot;</span>
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>Finally, looking in the variable inspector, you can see the variables now set available for use: </p>
-<p><a class="glightbox" href="../images/explore_variable_inspector_json_variables.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="variable inspector" src="../images/explore_variable_inspector_json_variables.png" /></a></p>
+Would yield:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>The Quick Brown Fox Jumps Over The Lazy Dog
+</span></code></pre></div></p>
 </details>
 <hr />
-<h4 id="variables_to_json">Variables to JSON<a class="headerlink" href="#variables_to_json" title="Permanent link"></a></h4>
-<p>Convert environment variables into JSON.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>{{ varsToJSON  | path: &quot;&quot; | variable: &quot;&quot; }}
+<h4 id="url_encode">URL Encode<a class="headerlink" href="#url_encode" title="Permanent link"></a></h4>
+<p>Take input text and URL encode it.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>{{ urlencode }}
 </span></code></pre></div>
+<details class="note">
+<summary>Example Usage</summary>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>The Quick Brown Fox Jumps Over The Lazy Dog
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>{{ urlencode  }}
+</span></code></pre></div>
+Would yield:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>The%20Quick%20Brown%20Fox%20Jumps%20Over%20The%20Lazy%20Dog%0A
+</span></code></pre></div></p>
+</details>
+<hr />
+<h4 id="url_decode">URL Decode<a class="headerlink" href="#url_decode" title="Permanent link"></a></h4>
+<p>Take input text and URL decode it.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>{{ urldecode }}
+</span></code></pre></div>
+<details class="note">
+<summary>Example Usage</summary>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>The%20Quick%20Brown%20Fox%20Jumps%20Over%20The%20Lazy%20Dog%0A
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>{{ urldecode }}
+</span></code></pre></div>
+Would yield:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>The Quick Brown Fox Jumps Over The Lazy Dog
+</span></code></pre></div></p>
+</details>
+<hr />
+<h4 id="split_extract_section">Split (extract section)<a class="headerlink" href="#split_extract_section" title="Permanent link"></a></h4>
+<p>Take input text and extract a section from it based on matching start and end text of the section, while optionally removing headers and footers. You must specifiy a unique start and end character set for this node to work.</p>
 <div class="admonition example">
 <p class="admonition-title">Parameters</p>
 <ul>
-<li><strong>Path</strong>: (Optional) The flattened path from which to start obtaining values.</li>
-<li><strong>Variable</strong>: The name of the variable to assign the resulting JSON.</li>
+<li>
+<p><strong>start</strong>: Find text to start the split.</p>
+</li>
+<li>
+<p><strong>end</strong>: Find text to end the split</p>
+</li>
+<li>
+<p><strong>removeHeaders</strong>: Remove detected Headers and Footers</p>
+</li>
 </ul>
 </div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<p>Nothing - Output is assigned to the set variable name.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>{{ split  | start: &quot;&quot; | end: &quot;&quot; | removeHeaders: &quot;true&quot; }}
+</span></code></pre></div>
+<details class="note">
+<summary>Example Usage</summary>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>I have 20 cats and 40 dogs.
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>{{ split | start: &quot;20&quot; | end: &quot;40&quot; | removeHeaders: false }}
+</span></code></pre></div>
+Would yield:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>20 cats and
+</span></code></pre></div></p>
+</details>
+<hr />
+<h4 id="split_on_delimiter">Split (on delimiter)<a class="headerlink" href="#split_on_delimiter" title="Permanent link"></a></h4>
+<p>Take input text and split it by a specified delimiter into an array of values.</p>
+<div class="admonition example">
+<p class="admonition-title">Parameters</p>
+<ul>
+<li>
+<p><strong>delimiter</strong>: The delimiting string or regex on which to split the input text</p>
+</li>
+<li>
+<p><strong>outputJson</strong>: Output the split result as a JSON array (defaults to false)</p>
+</li>
+<li>
+<p><strong>variable</strong>: The base variable name to use for the array</p>
+</li>
+</ul>
 </div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>{{ splitDelim  | delimiter: &quot;,&quot; | outputJson: &quot;&quot; | variable: &quot;&quot; }}
+</span></code></pre></div>
+<details class="note">
+<summary>Example Usage</summary>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>I have 20 cats and 40 dogs.
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>{{ splitDelim  | delimiter: &quot;cats&quot; | outputJson: &quot;true&quot; | variable: &quot;&quot; }}
+</span></code></pre></div>
+Would yield:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>[&quot;I have 20 &quot;,&quot; and 40 dogs.\n&quot;]
+</span></code></pre></div></p>
+</details>
+<hr />
+<h4 id="regular_expression">Regular Expression<a class="headerlink" href="#regular_expression" title="Permanent link"></a></h4>
+<p>Use a Regular Expression to modify or extract data from text.  The match option must be a valid regex, starting with a forward slash and ending with a forward slash plus any regex flags, for example: /d+.d+/.  In the regex escape all special characters with a single backslash. Use either the replace option to replace matched text, or the group option to extract text from the specified regex group number </p>
+<div class="admonition example">
+<p class="admonition-title">Parameters</p>
+<ul>
+<li>
+<p><strong>match</strong>: The regular expression</p>
+</li>
+<li>
+<p><strong>replace</strong>: The text to replace the match. Use this OR 'group'</p>
+</li>
+<li>
+<p><strong>group</strong>: The group to extract. Use this OR 'replace'</p>
+</li>
+</ul>
+</div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>{{ regex  | match: &quot;&quot; | replace: &quot;&quot; | group: &quot;&quot; }}
+</span></code></pre></div>
 <details class="note">
 <summary>Example Usage 1</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Howard has 20 cats and 40 dogs. 
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>He took them to the vet last week.=&gt;{{ grammar }}=&gt;{{ variable | name: &quot;text&quot; }}
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>{{ varsToJSON  | path: &quot;&quot; | variable: &quot;gm&quot; }}
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>&lt;&lt; name: gm, prompt: false &gt;&gt;
+<p>If you have a text that you need to replace with something else, you can use the following expression:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>my name is howardyoo
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>{{ regex  | match: &quot;yoo&quot; | replace: &quot;yu&quot; }}
 </span></code></pre></div>
-<p>Will yield:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>{
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>&quot;grammar&quot;: {
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>&quot;year&quot;: [
-</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>2024
-</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>],
-</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>&quot;context&quot;: &quot;&quot;,
-</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>&quot;dates&quot;: [
-</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>&quot;last&quot;,
-</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>&quot;week&quot;
-</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>],
-</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>&quot;propernouns&quot;: [
-</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>&quot;Howard&quot;
-</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>],
-</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>&quot;nouns&quot;: [
-</span><span id="__span-15-15"><a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>&quot;20 cats&quot;,
-</span><span id="__span-15-16"><a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>&quot;40 dogs&quot;,
-</span><span id="__span-15-17"><a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>&quot;vet&quot;,
-</span><span id="__span-15-18"><a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>&quot;week&quot;
-</span><span id="__span-15-19"><a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>],
-</span><span id="__span-15-20"><a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>&quot;preps&quot;: [
-</span><span id="__span-15-21"><a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>&quot;He&quot;,
-</span><span id="__span-15-22"><a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>&quot;them&quot;
-</span><span id="__span-15-23"><a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>],
-</span><span id="__span-15-24"><a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a>&quot;determiners&quot;: []
-</span><span id="__span-15-25"><a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a>},
-</span><span id="__span-15-26"><a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a>&quot;text&quot;: &quot;Howard has 20 cats and 40 dogs. \nHe took them to the vet last week.&quot;
-</span><span id="__span-15-27"><a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a>}
-</span></code></pre></div>
+Which yields:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>my name is howardyu
+</span></code></pre></div></p>
 </details>
 <details class="note">
 <summary>Example Usage 2</summary>
-<p>Using the <code>path</code> parameter, we can specify the starting path of values we want:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Howard has 20 cats and 40 dogs. 
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>He took them to the vet last week.=&gt;{{ grammar }}=&gt;{{ variable | name: &quot;text&quot; }}
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>{{ varsToJSON  | path: &quot;grammar.dates&quot; | variable: &quot;gm&quot; }}
-</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>&lt;&lt; name: gm, prompt: false &gt;&gt;
+<p>Regex also supports extraction. For example, if you want to extract the email address in a text message, you can do so:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>my name is howardyoo@email.com
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>{{ regex | match: &quot;[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}&quot; | group: &quot;0&quot; }}
 </span></code></pre></div>
-<p>Will yield:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>{
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>&quot;grammar&quot;: {
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>&quot;dates&quot;: [
-</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>&quot;last&quot;,
-</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>&quot;week&quot;
-</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>]
-</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>}
-</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>}
+This will extract the email address (group 0). The result is:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>howardyoo@email.com
+</span></code></pre></div></p>
+</details>
+<details class="note">
+<summary>Example Usage 3</summary>
+<p>Regex also supports groups, so in case you want to get the last digits of a phone number, you can do so:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>my phone number is 213-292-3322
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>{{ regex  | match: &quot;([0-9]+)-([0-9]+)-([0-9]+)&quot; | group: &quot;3&quot; }}
 </span></code></pre></div>
+which will result in:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>3322
+</span></code></pre></div></p>
 </details>
 <hr />
 <h4 id="json_escape">JSON Escape<a class="headerlink" href="#json_escape" title="Permanent link"></a></h4>
 <p>Escapes a string for use within a JSON object.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>{{ jsonEscape  }}
-</span></code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Parameters</p>
-<p>None - Data should be "chained" into this function.</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Returns</p>
-<p>An escaped JSON string, which removes special characters to make parsing and storing easier.</p>
-</div>
-<details class="note">
-<summary>Example Usage</summary>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="p">{</span>
-</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="err"> </span><span class="w"> </span><span class="nt">&quot;books&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="p">{</span>
-</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby&quot;</span><span class="p">,</span>
-</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;summary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby is a novel by F. Scott Fitzgerald that follows the story of Jay Gatsby, a wealthy and mysterious man, and his pursuit of the American Dream. Set in the 1920s, the book explores themes of love, wealth, and the corruption of the American Dream.&quot;</span><span class="p">,</span>
-</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="err"> </span><span class="w"> </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;F. Scott Fitzgerald&quot;</span>
-</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="p">}</span>
-</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="p">]</span>
-</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="p">}</span>
-</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="p">{{</span><span class="w"> </span><span class="err">jso</span><span class="kc">n</span><span class="err">Escape</span><span class="w"> </span><span class="p">}}</span>
-</span></code></pre></div>
-<p>Would yield:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="p">{</span><span class="err">\</span><span class="kc">n</span><span class="w"> </span><span class="err">\&quot;books\&quot;: [\n {\n \&quot;title\&quot;: \&quot;The Great Gatsby\&quot;,\n \&quot;summary\&quot;: \&quot;The Great Gatsby is a novel by F. Scott Fitzgerald that follows the story of Jay Gatsby, a wealthy and mysterious man, and his pursuit of the American Dream. Set in the 1920s, the book explores themes of love, wealth, and the corruption of the American Dream.\&quot;,\n \&quot;author\&quot;: \&quot;F. Scott Fitzgerald\&quot;\n }\n ]\n}\n</span>
-</span></code></pre></div>
-</details>
 
 
 
@@ -3126,7 +3387,7 @@
     <script id="__config" type="application/json">{"base": "../../../../../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "toc.follow", "content.code.copy"], "search": "../../../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
         <script src="../../../../../../js/watson.js"></script>
       
