@@ -193,6 +193,12 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/guides/integration/training_virtual_agents/"/>
     </url>
     <url>
+        <loc>https://documentation.neuralseek.com/guides/integration/wa_context_guide/</loc>
+        <lastmod>2025-03-18</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/guides/integration/wa_context_guide/"/>
+    </url>
+    <url>
         <loc>https://documentation.neuralseek.com/guides/models/multimodal/</loc>
         <lastmod>2025-03-18</lastmod>
         <changefreq>daily</changefreq>
