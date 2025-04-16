@@ -3599,9 +3599,13 @@
 <li><strong>Curation Data Field:</strong> Select the parameter of your FAQ content/document body.</li>
 <li><strong>Link Field:</strong> Select the URL field from the document metadata - shown below the title, or served in the Virtual Agent chat bubble as a link.</li>
 <li><strong>Document Name Field:</strong> The document metadata field for document "Title".</li>
+<li><strong>Additional Payload Field</strong> Allows users to add additional data into their message.</li>
 <li><strong>Attribute sources inside LLM Context by Document Name:</strong> Users have the option to enable or disable attributing sources inside LLM context by document name. For example, when disabled the output will be formatted with only the document contents. When enabled, the output will be formatted with an introductory sentence that attributes the 'document content' to the appropriate document 'name' (e.g. The document 'name' states that: 'document content'). This helps some LLMs follow the track of information.</li>
+<li><strong>Return the document instead of passages (only enable this if all of your documents are short)</strong> Users can enable return the document instead of passages in order to get an output that is a full document. This should only be enabled if all of the documents in the search are short.</li>
 <li><strong>Filter Field:</strong> Select document metadata field to use for filtering. For example, you can filter on a 'document_type' field for only 'PDF' types.</li>
+<li><strong>Static Default Filter Value (when no runtime filter is passed)</strong> The value a filter uses as its default setting. This value can differ when a runtime filter is passed.</li>
 <li><strong>Re-Sort Values List:</strong> Users are able to enter a prioritized list of values that you want to re-rank above other results, regardless of KB score. Click the light bulb icon to add a new row and enter the value of priority.</li>
+<li><strong>Enable Advanced Schema</strong> Enabling Advanced Schema allows users to get a more narrow search based on the Value List inputs.</li>
 </ul>
 </details>
 <h3 id="knowledgebase_tuning">KnowledgeBase Tuning<a class="headerlink" href="#knowledgebase_tuning" title="Permanent link"></a></h3>
