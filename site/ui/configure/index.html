@@ -3684,11 +3684,16 @@
 <ul>
 <li><strong>Timeout:</strong> Set this to a few seconds less than the timeout of your chatbot platform. When the timeout is reached, NeuralSeek will attempt to respond with a cached answer if available.</li>
 <li><strong>Context Turns:</strong> The number of turns in the conversation to pass to the LLM. Increasing this is not recommended as it will reduce the LLM context available for your documentation.</li>
+<li><strong>Context Detection:</strong> Use the model only instance for carrying language context or use the mAIstro flow for custom PoS tagging.</li>
+<li><strong>Force Carry Context:</strong> If no subject or noun is found in the question, assume the question is a follow up to the previous one.</li>
 <li><strong>Default Output Language:</strong> The language to reply in. Setting the language value on the API will override this parameter. Set to "Match input" to try and identify the input language and respond in that detected language.</li>
-<li><strong>Translate to KB Language:</strong> When enabled, translate queries into the language selected on the KnowledgeBase.</li>
+<li><strong>Cross Language:</strong> When enabled, translate queries into the language selected on the KnowledgeBase.</li>
+<li><strong>Log Alternate Configs:</strong> When using seek for a Proposal or Override of the configuration, the answer should be logged in the Curate Tab.</li>
+<li><strong>Hide API Keys:</strong> Hide the API keys of connected platforms from the Configure Admins. By defult, API keys are only shown to users with Admin and Configure permissions. Setting this option to true will require you to re-enter all API keys when importing a configuration file. Once set to true, this option cannot be disabled.</li>
 <li><strong>Virtual Agent Type:</strong> Select the type of Virtual Agent for curation of answers. This is the format NeuralSeek will use to build the chatbot file.</li>
 <li><strong>Embed Links into returned responses:</strong> Enable to embed clickable links into the <code>seek</code> generated answers on the API side.</li>
 <li><strong>Custom Stopwords List:</strong> <a href="https://en.wikipedia.org/wiki/Stop_word">Stop Words</a> - A list of "not useful" or insignificant words to remove pre-processing. Add words here to override NeuralSeek's list of stopwords.</li>
+<li><strong>HTML Cleansing:</strong> Neuralseek will automatically cleanse scraped HTML pages in supported KnowledgeBases.</li>
 </ul>
 </details>
 <h3 id="corporate_document_filter">Corporate Document Filter<a class="headerlink" href="#corporate_document_filter" title="Permanent link"></a></h3>
