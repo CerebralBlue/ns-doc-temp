@@ -13,6 +13,12 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/changelog/"/>
     </url>
     <url>
+        <loc>https://documentation.neuralseek.com/features/</loc>
+        <lastmod>2025-05-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/features/"/>
+    </url>
+    <url>
         <loc>https://documentation.neuralseek.com/features/RT_logging/</loc>
         <lastmod>2025-05-21</lastmod>
         <changefreq>daily</changefreq>
