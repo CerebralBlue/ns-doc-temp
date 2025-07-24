@@ -97,10 +97,10 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/features/pii_detect/"/>
     </url>
     <url>
-        <loc>https://documentation.neuralseek.com/features/replay/</loc>
+        <loc>https://documentation.neuralseek.com/features/replay_feature/</loc>
         <lastmod>2025-07-24</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/features/replay/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/features/replay_feature/"/>
     </url>
     <url>
         <loc>https://documentation.neuralseek.com/features/semantic_analytics/</loc>
@@ -131,6 +131,12 @@
         <lastmod>2025-07-24</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/guides/data/proposals/"/>
+    </url>
+    <url>
+        <loc>https://documentation.neuralseek.com/guides/data/replay_guide/</loc>
+        <lastmod>2025-07-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://documentation.neuralseek.com/guides/data/replay_guide/"/>
     </url>
     <url>
         <loc>https://documentation.neuralseek.com/guides/data/tuning_guide/</loc>
