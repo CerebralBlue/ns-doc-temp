@@ -6,17 +6,15 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Discover how to configure multimodal LLMs like GPT-4o to process images. Follow step-by-step instructions to set up, test connections, and utilize Maistro for image analysis.">
       
       
-      
-        <link rel="canonical" href="https://documentation.neuralseek.com/guides/models/multimodal/">
-      
-      
-        <link rel="prev" href="../../integration/implementing_feedback/">
+        <link rel="canonical" href="https://documentation.neuralseek.com/guides/data/doc_ingestion/">
       
       
-        <link rel="next" href="../semantic_model/">
+        <link rel="prev" href="../virtual_kb/">
+      
+      
+        <link rel="next" href="../replay_guide/">
       
       
       <link rel="icon" href="../../../assets/ns-new.png">
@@ -24,7 +22,7 @@
     
     
       
-        <title>Multimodal LLM Configuration - NeuralSeek Documentation</title>
+        <title>How to set up a document ingestion flow - PDFs - NeuralSeek Documentation</title>
       
     
     
@@ -115,11 +113,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Multimodal LLM Configuration - NeuralSeek Documentation" >
+        <meta  property="og:title"  content="How to set up a document ingestion flow - PDFs - NeuralSeek Documentation" >
       
-        <meta  property="og:description"  content="Discover how to configure multimodal LLMs like GPT-4o to process images. Follow step-by-step instructions to set up, test connections, and utilize Maistro for image analysis." >
+        <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://documentation.neuralseek.com/assets/images/social/guides/models/multimodal/index.png" >
+        <meta  property="og:image"  content="https://documentation.neuralseek.com/assets/images/social/guides/data/doc_ingestion/index.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -127,15 +125,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://documentation.neuralseek.com/guides/models/multimodal/" >
+        <meta  property="og:url"  content="https://documentation.neuralseek.com/guides/data/doc_ingestion/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Multimodal LLM Configuration - NeuralSeek Documentation" >
+        <meta  name="twitter:title"  content="How to set up a document ingestion flow - PDFs - NeuralSeek Documentation" >
       
-        <meta  name="twitter:description"  content="Discover how to configure multimodal LLMs like GPT-4o to process images. Follow step-by-step instructions to set up, test connections, and utilize Maistro for image analysis." >
+        <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://documentation.neuralseek.com/assets/images/social/guides/models/multimodal/index.png" >
+        <meta  name="twitter:image"  content="https://documentation.neuralseek.com/assets/images/social/guides/data/doc_ingestion/index.png" >
       
     
     
@@ -167,7 +165,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#steps_to_configure_the_llm" class="md-skip">
+        <a href="#pdf_with_text" class="md-skip">
           Skip to content
         </a>
       
@@ -202,7 +200,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Multimodal LLM Configuration
+              How to set up a document ingestion flow - PDFs
             
           </span>
         </div>
@@ -1758,8 +1756,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1779,11 +1779,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
@@ -1799,7 +1799,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             Data
@@ -1831,7 +1831,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../data/proposals/" class="md-nav__link ">
+            <a href="../proposals/" class="md-nav__link ">
               
   
   
@@ -1887,7 +1887,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../data/tuning_guide/" class="md-nav__link ">
+            <a href="../tuning_guide/" class="md-nav__link ">
               
   
   
@@ -1943,7 +1943,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../data/dynamic_filters/" class="md-nav__link ">
+            <a href="../dynamic_filters/" class="md-nav__link ">
               
   
   
@@ -1999,7 +1999,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../data/virtual_kb/" class="md-nav__link ">
+            <a href="../virtual_kb/" class="md-nav__link ">
               
   
   
@@ -2034,6 +2034,8 @@
                 
   
   
+    
+  
   
   
     
@@ -2047,15 +2049,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_5" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../data/doc_ingestion/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -2069,7 +2071,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_1_5">
             <span class="md-nav__icon md-icon"></span>
             Document Ingestion
@@ -2111,7 +2113,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../data/replay_guide/" class="md-nav__link ">
+            <a href="../replay_guide/" class="md-nav__link ">
               
   
   
@@ -2666,10 +2668,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -2681,11 +2681,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -2701,7 +2701,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Models
@@ -2712,8 +2712,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2727,15 +2725,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../models/multimodal/" class="md-nav__link ">
               
   
   
@@ -2749,7 +2747,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3_1">
             <span class="md-nav__icon md-icon"></span>
             Multimodal LLM Configuration
@@ -2791,7 +2789,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../semantic_model/" class="md-nav__link ">
+            <a href="../../models/semantic_model/" class="md-nav__link ">
               
   
   
@@ -3019,18 +3017,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#steps_to_configure_the_llm" class="md-nav__link">
+  <a href="#pdf_with_text" class="md-nav__link">
     <span class="md-ellipsis">
-      Steps to Configure the LLM
+      PDF with text
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#steps_to_process_an_image" class="md-nav__link">
+  <a href="#pdf_with_images" class="md-nav__link">
     <span class="md-ellipsis">
-      Steps to Process an Image
+      PDF with images
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#long_pdf_with_images_and_text" class="md-nav__link">
+    <span class="md-ellipsis">
+      Long PDF with images and text
     </span>
   </a>
   
@@ -3051,81 +3058,61 @@
     
                   
 
-  <nav class="md-tags" >
-    
-      
-      
-      
-        <span class="md-tag">Gconfigure</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">Gmaistro</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">configure</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">guide</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">maistro</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">models</span>
-      
-    
-  </nav>
 
 
+  <h1>How to set up a document ingestion flow - PDFs</h1>
 
-  <h1>Multimodal LLM Configuration</h1>
-
-<h2 id="steps_to_configure_the_llm">Steps to Configure the LLM<a class="headerlink" href="#steps_to_configure_the_llm" title="Permanent link"></a></h2>
-<p>To begin, navigate to the Configure tab and locate the LLM Details section. </p>
-<p><a class="glightbox" href="images/llmdetails3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="LLM details" src="images/llmdetails3.png" /></a></p>
-<p>Click on "Add an LLM" and choose a model that can process images, such as OpenAI GPT-4o. </p>
-<p><a class="glightbox" href="images/selectllm.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Select LLM" src="images/selectllm.png" /></a></p>
-<p>Once selected, add the model and enter the necessary connection details, which, for GPT-4o, would be the API Key. </p>
-<p>Test the connection by clicking the Test button and ensure the button turns green, indicating a successful connection. </p>
-<p><a class="glightbox" href="images/successtestllm.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Successful LLM" src="images/successtestllm.png" /></a></p>
-<p>Save the configuration and provide a meaningful name for the version. </p>
-<h2 id="steps_to_process_an_image">Steps to Process an Image<a class="headerlink" href="#steps_to_process_an_image" title="Permanent link"></a></h2>
-<p>Next, switch to the Maistro tab to upload an image. Use the left side pane to search for "Upload data" and then select "Upload a File" under that section. </p>
-<p>After selecting the local file, a local document node will be created. You can use the "Local Document" button to access a dropdown menu that shows all your locally uploaded files, and select the image you uploaded as your choice.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    &lt;&lt; name: img, prompt: true, desc: Enter image file name &gt;&gt;
-</span></code></pre></div>
-<p><a class="glightbox" href="images/localdocument.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Local document node" src="images/localdocument.png" /></a></p>
-<p>If you plan to use this image for different purposes, it’s best to set it as a variable. Add a set variable node to the right of the local document node and give the variable a descriptive name. </p>
-<p><a class="glightbox" href="images/setvariablenode.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Local document node" src="images/setvariablenode.png" /></a></p>
-<p>Below these nodes, add a send to LLM node. For the prompt, you can use:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>What is this a picture of?
-</span></code></pre></div>
-<p>For the image, reference the variable you defined earlier:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>  &lt;&lt; name: img, prompt:false &gt;&gt;
-</span></code></pre></div>
-<p>And the node should be end up like this:</p>
-<p><a class="glightbox" href="images/sendtollmnode.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Complete template" src="images/sendtollmnode.png" /></a></p>
-<p>Select an LLM that supports reading images, such as GPT-4o. </p>
-<p>Press the Evaluate button. You will be prompted to enter the name of the image file you want to process, including its file extension. Once entered, the setup will allow Maistro to describe the image.</p>
-<p><a class="glightbox" href="images/maistroworkflow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Complete template" src="images/maistroworkflow.png" /></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This is a basic example, but you can expand on this logic to achieve more complex procedures.</p>
+<p>This mini-guide provides a quick overview of how to upload, process, and use PDF files of varying length and content in mAIstro.</p>
+<h2 id="pdf_with_text">PDF with text<a class="headerlink" href="#pdf_with_text" title="Permanent link"></a></h2>
+<p>Text-based PDFs are the most straightforward to work with in mAIstro. These files contain embedded digital text (not scanned images), which allows the AI to directly parse, analyze, and reuse the content.</p>
+<p>To process a PDF containing solely text, the user should follow these steps:</p>
+<ol>
+<li>Upload the PDF as a local document using the Upload Document node under Upload Data.</li>
+<li>Use a context loop to split the document into smaller, readable sections.</li>
+<li>Save the content into a variable to be used by the AI agent.</li>
+<li>End the loop.</li>
+</ol>
+<p>EXAMPLE NTL:
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{{</span> doc  <span class="p">|</span> <span class="na">name</span><span class="p">:</span> <span class="s">&quot;example.pdf&quot;</span> <span class="p">}}</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{{</span> contextLoop  <span class="p">|</span> <span class="na">tokens</span><span class="p">:</span> <span class="s">&quot;3000&quot;</span> <span class="p">|</span> <span class="na">overlap</span><span class="p">:</span> <span class="s">&quot;10&quot;</span> <span class="p">}}</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">{{</span> variable  <span class="p">|</span> <span class="na">name</span><span class="p">:</span> <span class="s">&quot;exampleContent&quot;</span> <span class="p">|</span> <span class="na">mode</span><span class="p">:</span> <span class="s">&quot;append&quot;</span> <span class="p">}}</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">{{</span> endLoop  <span class="p">}}</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">&lt;&lt;</span> <span class="nv">name</span><span class="p">:</span> exampleContent<span class="p">,</span> <span class="nv">prompt</span><span class="p">:</span> false <span class="p">&gt;&gt;</span>
+</span></code></pre></div></p>
+<p><a class="glightbox" href="images/pdftext.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="imagepdf" src="images/pdftext.png" /></a></p>
+<h2 id="pdf_with_images">PDF with images<a class="headerlink" href="#pdf_with_images" title="Permanent link"></a></h2>
+<p>When a PDF consists of scanned pages or embedded images (ex. from a physical book or printed document), it must be converted into readable text using Optical Character Recognition (OCR).</p>
+<p>To process an image-based PDF for use in mAIstro:</p>
+<ol>
+<li>Upload document using the Upload &amp; OCR node under Upload Data.</li>
+<li>Once OCR is applied, you can proceed with looping and variable setup just like with a text-based PDF.</li>
+</ol>
+<p>For more information on OCR'ing an image, see <a href="https://documentation.neuralseek.com/ui/maistro/features/ntl_functions/upload_data/#upload_document">Upload &amp; OCR</a>.</p>
+<h2 id="long_pdf_with_images_and_text">Long PDF with images and text<a class="headerlink" href="#long_pdf_with_images_and_text" title="Permanent link"></a></h2>
+<p>Complex PDFs such as technical manuals, equipment documentation, or compliance guides often contain both unstructured and structured content (e.g., narrative text, tables, flowcharts).</p>
+<p>Processing a long PDF file with images and text in mAIstro can be efficiently managed by following these steps:</p>
+<ol>
+<li>Set up a PDF loop, which splits a PDF by page and loops through the pages as both text and images.</li>
+<li>Send contents to the LLM and save as a variable.</li>
+<li>End the PDF Loop</li>
+<li>Run context loops on the variable, then end the loop.</li>
+</ol>
+<p>EXAMPLE NTL:
+<div class="language-ntl highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{{</span> pdfLoop  <span class="p">|</span> <span class="na">file</span><span class="p">:</span> <span class="s">&quot;longexample.pdf&quot;</span> <span class="p">|</span> <span class="na">pagesPerLoop</span><span class="p">:</span> <span class="s">&quot;1&quot;</span> <span class="p">}}</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">{{</span> LLM  <span class="p">|</span> <span class="na">prompt</span><span class="p">:</span> <span class="s">&quot;Your job is to turn everything in this business document into text. \n\nIf there are any images, describe them in detail.\n \nIf there are charts or diagrams, explain all of the data points.\nHere is the text:\n&lt;&lt; name: pdfLoopText0, prompt: false &gt;&gt;\n&quot;</span> <span class="p">|</span> <span class="na">cache</span><span class="p">:</span> <span class="s">&quot;true&quot;</span> <span class="p">|</span> <span class="na">images</span><span class="p">:</span> <span class="s">&quot;&lt;&lt; name: pdfLoopImage0, prompt: false &gt;&gt;&quot;</span> <span class="p">}}</span><span class="o">=&gt;</span><span class="p">{{</span> variable  <span class="p">|</span> <span class="na">name</span><span class="p">:</span> <span class="s">&quot;accumulator&quot;</span> <span class="p">|</span> <span class="na">mode</span><span class="p">:</span> <span class="s">&quot;append&quot;</span> <span class="p">}}</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">{{</span> endLoop  <span class="p">}}</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">&lt;&lt;</span> <span class="nv">name</span><span class="p">:</span> accumulator<span class="p">,</span> <span class="nv">prompt</span><span class="p">:</span> false <span class="p">&gt;&gt;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">{{</span> contextLoop  <span class="p">|</span> <span class="na">tokens</span><span class="p">:</span> <span class="s">&quot;3000&quot;</span> <span class="p">|</span> <span class="na">overlap</span><span class="p">:</span> <span class="s">&quot;10&quot;</span> <span class="p">}}</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">{{</span> endLoop  <span class="p">}}</span>
+</span></code></pre></div></p>
+<p><a class="glightbox" href="images/longpdfloop.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="imagelong" src="images/longpdfloop.png" /></a></p>
+<div class="admonition tip">
+<p class="admonition-title">Final Tips</p>
+<ul>
+<li>You can check if your PDF is text-based by trying to highlight/select text. If you can’t, it likely needs OCR.</li>
+<li>Token Overlap is important for preserving sentence continuity across segments.</li>
+<li>Test small samples first when working with large PDFs to fine-tune your prompts or loop settings.</li>
+</ul>
 </div>
 
 
